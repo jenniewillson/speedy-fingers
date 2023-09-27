@@ -119,154 +119,96 @@ The colours are chosen with the design principles in mind of simplicity and fun.
 
 Typography is really important for Speedy fingers, as it is important that it is easy for the user to read what they are typing, without mis-reading words or letters. I initially thought I would be looking for a sans-serif with characters that apppeared as much like the simple writing one is taught as a child. However, having googled to find out more, I discovered from [a Techradar article](https://www.techradar.com/news/google-has-released-a-new-font-it-says-makes-reading-online-easier) that Google's Roboto Serif font had been designed with just this thing in mind, to be the easiest font for reading online. I concluded that Google were the experts on this, rather than me, so have decided to use that font!
 
-I want to ensure the website is as simple as possible, so 
+I want to ensure the website is as simple as possible, so intend to use the same font for all text, simply adjusting colour, size and format where required.
 
 ### Imagery
 
-All images used were provided and labelled by Steve Willson, an experienced Trainspotter. They are selected to represent the three themes of the website.
-
-The logo is designed to look like a train numberplate, using recognisable colours and similar font as above, so it will all feel familiar to users.
+Images will be fun and relevant, including the use of fun imagery to represent the user's acheivements.
 
 ### Animations and Transitions
 
-Many users will not be hugely confident internet/app users and so animations should be kept simple and functional. They obviously highlight hovered menu items and icons with a change of colour and weight, without adding any other animation that might be distracting or offputting.
+These will be key to responding to the user's actions and showing their success or failure. As above, recognisable colours will be used to show success or failure in typing the given word and this should be clear and visible to the user, showing for long enough for them to be able to see that they have gone wrong.
 
 ## Site Structure
 
-This website is multiple pages, keeping each page simple and dedicated to a particular subject and ensuring it is easy to find what is needed.
+Keeping the principles of the project in mind, the website will be simple and users should be taken immediately to the 'action' without having to navigate through other pages first. Their high score should be clearly visible on the page. There should be a page for feedback, where users can report any concerns or suggestions for improvement and a page to confirm submission - and a custom 404 page too.
 
-Multiple intuitive navigation options are simple without overcrowding, allowing users to read menus and use those - or use familiar links such as the logo or the footer icons.
-
-The default is the Home page, giving information about the Trainiacs concept and easy options to navigate elsewghere. It provides just enough information but not too much.
-
-The main menu and footer appear on every page. The menu will take the user to every other page they need to navigate to. The footer will also take them to the sign-up menu as well as giving options for social media and phone and email contacts.
-
-The main Trainiacs logo always navigates back to the home page.
-
-The images on the Home Page will navigate to the relevant pages - and each of those pages has easy links to the contact page.
-
-The contact page will redirect to a page to confirm the form has been submitted and this also contains a link to home within the text, as well as the usual header and footer links and menus.
-
-There is a customer 404 page which is kept within the theme, is fun and also provides an easy link back to the home page within the main text.
+Users should not have any difficulty finding everything they need very clearly, allowing them to participate, start a new game and see any relevant information.
 
 ## Wireframes
 
 ### Mobile Wireframes
 
-![Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/08c62122-ab82-4f73-b7ad-278b913689d3)
-![Modern traction](https://github.com/jenniewillson/trainiacs/assets/127458925/f1dd201a-5a5d-4ed7-8fd1-a51b1ad097da)
-![Calendar](https://github.com/jenniewillson/trainiacs/assets/127458925/5dfdd892-a0d3-4803-8f18-7663089ef6d6)
-![Gallery](https://github.com/jenniewillson/trainiacs/assets/127458925/a0df3263-fb9d-45a6-8527-6d272fb72e64)
+This application is not designed for use on mobile devices, so users should be informed of this when they access the page on a smaller screen.
 
 ### Tablet Wireframes
 
-![Tablet - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/01c2c821-9233-47b5-92e7-7ffc40bb9331)
+*UPDATE* ![Tablet - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/01c2c821-9233-47b5-92e7-7ffc40bb9331)
 
 ### Desktop Wireframes
 
-![Desktop - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/00852e36-90d6-485e-836a-d6a381c16773)
+*UPDATE* ![Desktop - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/00852e36-90d6-485e-836a-d6a381c16773)
 
 # Features
 
 ## Version control
 
-At the beginning of the project I had two problems - firstly that I had misunderstood the teaching videos and thought it was telling me to commit code after each session of work. Secondly I had a problem with CodeAnywhere which was preventing me from committing anything as it kept telling me it didn't know my identity and the suggested fixes were not working. I had to carry on working due to time constraints.
+Commits are carried out regularly throughout the project and detailed through commit comments using the standards below, taken from [github](https://gist.github.com/noelworden/cf0c428f19be57ec0e495f7e04d24ebc):
 
-Once this was resolved and I understood the requirement I have been committing code much more regularly and after each major change and recognise that this is the correct way to work and manage the code and project. I am unable to go back and change this, but have done my best to improve this going forward.
+- #FEAT - feature ,new stuff to the site
+- #BUG - any bug fix you put in place
+- #CHG - change that is NOT a refactor or a COPY change
+- #REFAC - refactors existing code but does not change functionality
+- #PERF -  effects the performance of the application, ie: adding sidekiq or where-exists
+- #DATA -  only effects the data directly, ie: add to or remove from the seed file
+- #TOOL - does not directly effect site users, developer or testing space, ex: pry or rubocop
+- #COPY - only text changes
+- #DOC - changes to documentation
+- #SPEC - any test or spec changes
+- #WIP- work in progress. USE SPARINGLY
+
 
 ## Implemented features
 
 ### Header
 
-- Priority - brand identity and easy navigation
-- Used logo that fitted with the theme
-- Logo links back to home page, as this is intuitive as a lot of websites work this way
-- Menu is responsive - Hamburger for smaller screens and navbar for wider
-- Did consider navbar remaining at top when scrolling but decided this wasn't an essential as only the gallery page is likely to scroll the menu out of sight.
+- tbc
 
 ### Footer
 
-- Contact us link - intuitive to users to find this in the footer, despite it being available elsewhere
-- Telephone contact and email available here as likely to be preferred by target audience
-- Social media links avaialble and opening in a new tab
+- tbc
 
 ### Home page
 
-- Pictures to capture the user's interest
-- Immediate obvious links to theme pages from large pictures as well as menu
-- Simple and styled to theme
+- tbc
 
-### Theme pages
+### Contact page
 
-- three clear sections, as below
-- clear separation with background
-- easy links where needed, covering whole section rather than requiring pixel hunting
-- links in addition to menu
+- tbc
 
-#### Meetings
+### Email sent
 
-- clearly showing the next few meetings
-- fun 'timeline' icon of train track fits with theme
-- links to meeting location where relevant, also opening in separate tabs
-
-#### Contact link
-
-- Gives a bit more information about signing up
-
-#### Gallery taster
-
-- Gives a taster of the gallery images, appropriate to the page theme 
-
-### Gallery
-
-- Shows a range of photos of interest to users
-- Responsive and flexible - so different images can be swapped in and out over time
-- Purposefully designed in the style of a noticeboard - not lining images up as they will all be likely different shapes and sizes when users submit and this allows flexibility for that
-- Photo description avaialble on hover
-
-### Contact form
-
-- Allows users to sign up for an email list
-- Mandatory fields for name and email
-- Clear explanation of benefit of signing up
-
-### Signed up
-
-- Confirmation to the user that they have signed up
-successfully
-- Easy redirection to Home page
+- tbc
 
 ### Custom 404 page
 
 - Appears more professional as it is styled to the theme
-- Fun message, again with a train theme
+- Fun message, matched with the theme
 - Easy navigation back to Home Page
 
 ## Future features
 
-### Calendar of events
-Add a page containing a longer term calendar of events available, to be able to filter them on topic and to be able to have them in a database that dynamically updates as each date passes.
+### Log in and save progress
+Ability to log in and save progress for next visit.
 
-### Event sign-up
-To be able to sign up for events with a number limit and ability to pay online
+### Add friends and compete
+Ability to sign in, add friends and compete with a leaderboard for the top ten scores.
 
-### Q&A threads
-Consider adding a Q&A style page that users can post in and give answers and get email updates
+### Typing sentences
+Expand to include typing sentences as well as single words.
 
-### Mandatory check box on form
-Make at least one checkbox mandatory on the Sign Up form 
-
-### Member login
-A member page where you can login and update your mailing preferences and details
-
-### Sign up works!
-Mailing form would be connected to an endpoint and a database of details and preferences
-
-### GDPR statement
-Add the legally required GDPR statement about how your personal information will be stored and what it will be used for
-
-### Ability for users to submit photos
-Form that allows users to upload their own photos and descriptions for submission for the gallery
+### Share score to social media
+Ability to post to social media directly from the site, to inform friends of your score and encourage them to use Speedy fingers too!
 
 # Testing
 
@@ -279,16 +221,17 @@ Form that allows users to upload their own photos and descriptions for submissio
 - [CSS](https://www.w3schools.com/w3css/default.asp) The project uses **CSS** to define DOM appearance. 
 - [HTML](https://www.w3schools.com/html/default.asp) The project uses **HTML** to define DOM elements.
 - [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown.
+- Javascript
 
 ## Frameworks and Extensions
 
-- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- *??* [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- JQuery
 
 ## Fonts
-
+*UPDATE?*
 - [FontAwesome](https://fontawesome.com/icons?m=free)
-- [Source Serif Pro](https://fonts.google.com/specimen/Source+Serif+Pro?query=source+serif)
-- [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
+- [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif?query=roboto+se)
 
 ## Tools
 
@@ -331,8 +274,6 @@ Form that allows users to upload their own photos and descriptions for submissio
 
 # Credits
 
-- all images provided by Steve Willson
-- colour choices provided by http://www.gwr.org.uk/liveries.html 
 - Code Institude coding lessons and examples
 
 # Content and Media
