@@ -16,3 +16,20 @@
 #letter-buttons {
     margin-top: 2rem;
 }
+
+.basic-instructions {
+    background-color: #49c195;
+    color: #ffffff;
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    padding: 1rem;
+    border-radius: 10%;
+    width: 50%;
+    border: 5px solid #ee1b29;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
