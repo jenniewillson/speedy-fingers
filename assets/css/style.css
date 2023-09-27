@@ -24,9 +24,12 @@
         sans-serif;
     font-weight: 600;
     font-size: larger;
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 10%;
-    width: 50%;
+    width: 35%;
     border: 5px solid #ee1b29;
     margin-right: auto;
     margin-left: auto;
