@@ -146,8 +146,33 @@ This application is not designed for use on mobile devices, so users should be i
 *UPDATE* ![Tablet - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/01c2c821-9233-47b5-92e7-7ffc40bb9331)
 
 ### Desktop Wireframes
+- Logo and tag line on every page
+- Detailed instructions can be accessed if needed
+- Footer links to message page and socials
+#### Home page
+- Simple instructions in green box
+- Option buttons at top of page - all yellow as currently none selected
+- Placeholder text so user quickly knows where to type
+![Home page](https://github.com/jenniewillson/speedy-fingers/assets/127458925/ebbc8fa6-eb7e-4a79-8807-0dd7432d87c8)
+#### Instructions pop-up
+- Pop-up message from home page with more detailed instructions if needed
+![Instructions pop-up](https://github.com/jenniewillson/speedy-fingers/assets/127458925/510a4503-ed33-4e00-a571-0e2e09a1719d)
+#### Correct spelling
+- If the word is being typed correctly, the letters in the given word above will light up green as they are typed by the user
+![Correct spelling](https://github.com/jenniewillson/speedy-fingers/assets/127458925/d6dc4f15-b26c-4afb-a8d2-653075ad26fa)
+#### Incorrect spelling
+- If a letter is typed incorrectly, that letter will be shown in red so the user is aware it was wrong. At this point the game stops and they will need to start again.
+![Incorrect spelling](https://github.com/jenniewillson/speedy-fingers/assets/127458925/6e29e986-977d-47ef-9408-979430d5f807)
+#### Message us
+- The 'send us a message' link in the footer will take users to this page
+- It is designed as a suggestion box, so the user does not need to leave an email address and can leave the message anonymously if they prefer
+![Message us](https://github.com/jenniewillson/speedy-fingers/assets/127458925/9c422822-aee1-48fd-b391-b6600d8a7041)
+#### Message confirmation
+- Confirms to the user that their message was sent
+![Message confirmation](https://github.com/jenniewillson/speedy-fingers/assets/127458925/e63c96b0-5b6f-4506-adf3-beb687f94d13)
+#### Custom 404
+![404](https://github.com/jenniewillson/speedy-fingers/assets/127458925/09257e94-6204-44a7-a974-eae48e425123)
 
-*UPDATE* ![Desktop - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/00852e36-90d6-485e-836a-d6a381c16773)
 
 # Features
 
@@ -209,6 +234,9 @@ Expand to include typing sentences as well as single words.
 
 ### Share score to social media
 Ability to post to social media directly from the site, to inform friends of your score and encourage them to use Speedy fingers too!
+
+### Message control
+Control how many messages a user can send from a single IP and stop messages from being sent where they contain specific words or phrases.
 
 # Testing
 
