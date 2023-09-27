@@ -140,10 +140,11 @@ Users should not have any difficulty finding everything they need very clearly, 
 ### Mobile Wireframes
 
 This application is not designed for use on mobile devices, so users should be informed of this when they access the page on a smaller screen.
+![Mobile](https://github.com/jenniewillson/speedy-fingers/assets/127458925/c73a56a7-93f5-4c3a-9d64-b1e4a0532ca3)
 
 ### Tablet Wireframes
 
-*UPDATE* ![Tablet - Home page](https://github.com/jenniewillson/trainiacs/assets/127458925/01c2c821-9233-47b5-92e7-7ffc40bb9331)
+![iPad](https://github.com/jenniewillson/speedy-fingers/assets/127458925/a577fbbd-3f98-4c20-8d21-b9ae20a9c23b)
 
 ### Desktop Wireframes
 - Logo and tag line on every page
