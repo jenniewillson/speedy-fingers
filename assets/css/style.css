@@ -89,6 +89,8 @@ body {
 #d-instructions {
     margin-left: 45%;
     margin-right: 45%;
+    margin-bottom: 5%;
+    font-weight: 600;
 }
 
 #high-score {
@@ -97,4 +99,13 @@ body {
     font-weight: 600;
     color: #0d070c;
     margin: 2%
+}
+
+footer {
+    font-size: 150%;
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 250%;
 }
