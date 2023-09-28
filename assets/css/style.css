@@ -66,10 +66,15 @@
 #input {
     color: #0d070c;
         font-weight: 600;
-        font-size: 500%;
+        font-size: 300%;
         font-family: 'Roboto', sans-serif;
 }
 
 #input label {
     font-size: 50%;
 }
+
+#input input {
+    text-align: center;
+}
+
