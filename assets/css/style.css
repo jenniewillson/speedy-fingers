@@ -36,3 +36,29 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+#timerBox {
+    margin-left: 15%;
+    
+}
+
+#counter {
+    color: #ee1b29;
+    font-weight: 600;
+    font-size: 500%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#timerLabel {
+    color: #0d070c;
+    font-weight: 600;
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#words {
+    color: #0d070c;
+    font-weight: 600;
+    font-size: 500%;
+    font-family: 'Roboto', sans-serif;
+}
