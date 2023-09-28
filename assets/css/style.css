@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Serif:opsz,wght@8..144,300;8..144,600;8..144,800&display=swap');
 
+body {
+    font-family: 'Roboto',
+            sans-serif;
+}
 
 .logo {
     display: block;
@@ -20,8 +24,6 @@
 .basic-instructions {
     background-color: #49c195;
     color: #ffffff;
-    font-family: 'Roboto',
-        sans-serif;
     font-weight: 600;
     font-size: larger;
     padding-left: 2rem;
@@ -37,7 +39,7 @@
     margin-bottom: 2rem;
 }
 
-#timerBox {
+#timer-box {
     margin-left: 15%;
     
 }
@@ -46,28 +48,24 @@
     color: #ee1b29;
     font-weight: 600;
     font-size: 500%;
-    font-family: 'Roboto', sans-serif;
 }
 
-#timerLabel {
+#timer-label {
     color: #0d070c;
     font-weight: 600;
     font-size: 200%;
-    font-family: 'Roboto', sans-serif;
 }
 
 #words {
     color: #0d070c;
     font-weight: 600;
     font-size: 500%;
-    font-family: 'Roboto', sans-serif;
 }
 
 #input {
     color: #0d070c;
         font-weight: 600;
         font-size: 300%;
-        font-family: 'Roboto', sans-serif;
 }
 
 #input label {
@@ -78,3 +76,25 @@
     text-align: center;
 }
 
+#zoo {
+    display: flex;
+    background-color: #ee1b29;
+    color: #ffffff;
+    font-size: 300%;
+    font-weight: 600;
+    margin: 5%;
+    border: 5px solid #0d070c;
+}
+
+#d-instructions {
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+#high-score {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600;
+    color: #0d070c;
+    margin: 2%
+}
