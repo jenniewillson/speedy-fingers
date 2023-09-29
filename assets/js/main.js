@@ -1,3 +1,4 @@
+
 function getData(cb) {
     var xhr = new XMLHttpRequest();
 
@@ -6,14 +7,18 @@ function getData(cb) {
 
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            cb(JSON.parse(this.responseText));
+            var wordList = this.responseText;
+            console.log(wordList);
+            //cb(JSON.parse(this.responseText));//
         }
     };
 }
 
+//NOT WORKING//
+
 function generateWords(data) {
-    var givenWords = document.getElementById("words");
-    givenWords.innerHTML = (data);
+    var givenWord = document.getElementById("words");
+    givenWord.innerHTML = (wordList);
 }
 
 getData(generateWords);
