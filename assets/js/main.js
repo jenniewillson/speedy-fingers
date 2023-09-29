@@ -29,6 +29,16 @@ function generateWords(noLetters) {
     });
 };
 
+function checkLetter(event) {
+    let sourceLetter = document.getElementById("words").innerHTML.charAt(0);
+    let inputLetter = event.key;
+    if (inputLetter === sourceLetter) {
+        console.log("correct!");
+    }
+    else {
+        console.log("wrong!");
+    }
+};
 
 var count = 60, timer = setInterval(function () {
     $("#counter").html(count--);
