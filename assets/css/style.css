@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Serif:opsz,wght@8..144,300;8..144,600;8..144,800&display=swap');
 
+/*SPEEDY FINGERS - JENNIE WILLSON - STYLE.CSS*/
+
+/*GENERAL STYLES*/
+
 body {
     font-family: 'Roboto',
             sans-serif;
 }
+
+/*LOGO*/
 
 .logo {
     display: block;
@@ -11,6 +17,8 @@ body {
     margin-right: auto;
     margin-top: 2rem;
 }
+
+/*OPTIONS*/
 
 #letter-choice {
     margin-right: 10px;
@@ -20,6 +28,8 @@ body {
 #letter-buttons {
     margin-top: 2rem;
 }
+
+/*BASIC INSTRUCTIONS*/
 
 .basic-instructions {
     background-color: #49c195;
@@ -39,6 +49,8 @@ body {
     margin-bottom: 2rem;
 }
 
+/*TIMER*/
+
 #timer-box {
     margin-left: 15%;
     
@@ -56,11 +68,15 @@ body {
     font-size: 200%;
 }
 
+/*WORDS*/
+
 #words {
     color: #0d070c;
     font-weight: 600;
     font-size: 500%;
 }
+
+/*USER INPUT*/
 
 #input {
     color: #0d070c;
@@ -76,6 +92,8 @@ body {
     text-align: center;
 }
 
+/*ZOO*/
+
 #zoo {
     display: flex;
     background-color: #ee1b29;
@@ -86,12 +104,16 @@ body {
     border: 5px solid #0d070c;
 }
 
+/*DETAILED INSTRUCTIONS*/
+
 #d-instructions {
     margin-left: 45%;
     margin-right: 45%;
     margin-bottom: 5%;
     font-weight: 600;
 }
+
+/*SCORE*/
 
 #high-score {
     text-align: center;
@@ -100,6 +122,8 @@ body {
     color: #0d070c;
     margin: 2%
 }
+
+/*FOOTER*/
 
 footer {
     font-size: 150%;
