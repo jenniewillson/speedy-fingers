@@ -1,5 +1,9 @@
 $('.letter-choice').click(function () {
     $('#basic-instructions').hide();
+    $('#timer-box').show();
+    $('#word').show();
+    $('#input').show();
+    $('#zoo').show();
 });
 
 function getData(cb) {

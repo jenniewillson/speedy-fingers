@@ -20,7 +20,7 @@ body {
 
 /*OPTIONS*/
 
-#letter-choice {
+.letter-choice {
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -31,7 +31,7 @@ body {
 
 /*BASIC INSTRUCTIONS*/
 
-.basic-instructions {
+#basic-instructions {
     background-color: #49c195;
     color: #ffffff;
     font-weight: 600;
@@ -53,7 +53,7 @@ body {
 
 #timer-box {
     margin-left: 15%;
-    
+    display: none;
 }
 
 #counter {
@@ -74,14 +74,16 @@ body {
     color: #0d070c;
     font-weight: 600;
     font-size: 500%;
+    display: none;
 }
 
 /*USER INPUT*/
 
 #input {
     color: #0d070c;
-        font-weight: 600;
-        font-size: 300%;
+    font-weight: 600;
+    font-size: 300%;
+    display: none;
 }
 
 #input label {
@@ -100,8 +102,10 @@ body {
     color: #ffffff;
     font-size: 300%;
     font-weight: 600;
-    margin: 5%;
+    margin: 2%;
     border: 5px solid #0d070c;
+    display: none;
+    padding: 2rem;
 }
 
 /*DETAILED INSTRUCTIONS*/
