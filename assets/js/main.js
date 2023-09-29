@@ -1,3 +1,6 @@
+$('.letter-choice').click(function () {
+    $('#basic-instructions').hide();
+});
 
 function getData(cb) {
     var xhr = new XMLHttpRequest();
