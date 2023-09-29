@@ -11,7 +11,7 @@ const baseURL = "https://random-word-api.vercel.app/api?words=1";
 function getData(noLetters, cb) {
     var xhr = new XMLHttpRequest();
 
-       xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             cb(JSON.parse(this.responseText));
         }
@@ -45,3 +45,6 @@ var count = 60, timer = setInterval(function () {
     if (count == -1) clearInterval(timer);
 }, 1000);
 
+$('#d-instructions').click(function () {
+    window.alert("Select the number of letters you would like in the words you are shown.\r\rWhen you click in the box, the timer will start.You have a minute to types as many words as possible.\r\rIf you get a word wrong, your turn ends.Click the selector for the number of letters to start a new game.\r\rThe more words you get correct, the more animals you gain in your zoo!If you get all your words correct, you win! \r\rKeep trying to beat your high score!");
+});
