@@ -35,8 +35,18 @@ function generateWords(noLetters) {
 
 //checks if the word is typed correctly
 
+function iteratePress(event) {
+    var countPress = 1;
+    var letterCount = document.getElementById("words").innerHTML.split("").length;
+    if (countPress < letterCount) {
+            countPress++;
+        } else {
+            countPress = 1;
+        }
+    };
+
 function checkLetter(event) {
-    let sourceLetter = document.getElementById("words").innerHTML.charAt(0);
+    let sourceLetter = document.getElementById("words").innerHTML.charAt(countPress);
     let inputLetter = event.key;
     if (inputLetter === sourceLetter) {
         console.log("correct!");
@@ -45,6 +55,8 @@ function checkLetter(event) {
         console.log("wrong!");
     }
 };
+
+
 
 //provides the countdown
 
