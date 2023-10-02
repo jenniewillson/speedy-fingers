@@ -1,12 +1,15 @@
 // hides and shows sections depending on whether game is in progress
 
-$('.letter-choice').click(function () {
-    $('#basic-instructions').hide();
-    $('#timer-box').show();
-    $('#words').show();
-    $('#input').show();
-    $('#zoo').show();
-});
+$('.letter-choice').click(gameOnOff);
+
+function gameOnOff() {
+    $('#basic-instructions').toggle();
+    $('#timer-box').toggle();
+    $('#words').toggle();
+    $('#input').toggle();
+    $('#zoo').toggle();
+    $('#userInput').val('');
+};
 
 //generates the random word to copy
 
@@ -65,6 +68,7 @@ function checkLetter(event) {
         countPress = 0;
         document.getElementById("words").innerHTML = "";
         wordsArray = "";
+        gameOnOff();
     }
 };
 
