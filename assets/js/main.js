@@ -25,9 +25,11 @@ function getData(noLetters, cb) {
 
 };
 
+let wordsArray;
+
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
-        const wordsArray = data;
+        wordsArray = data;
         document.getElementById("words").innerHTML = wordsArray[0];
         console.log(wordsArray);
     });
@@ -39,15 +41,17 @@ let countPress = 0;
 
 function iteratePress(event) {
     let letterCount = document.getElementById("words").innerHTML.split("").length;
-    if (countPress < letterCount) {
+    if (countPress < letterCount-1) {
             countPress++;
         } else {
-            countPress = 1;
+            countPress = 0;
             document.getElementById("userInput").value = "";
+            wordsArray.shift();
             document.getElementById("words").innerHTML = wordsArray[0]
         };
     console.log(letterCount);
     console.log(countPress);
+    console.log(wordsArray)
     };
 
 function checkLetter(event) {
@@ -60,6 +64,7 @@ function checkLetter(event) {
         document.getElementById("userInput").style.color = "#ee1b29";
         countPress = 0;
         document.getElementById("words").innerHTML = "";
+        wordsArray = "";
     }
 };
 
