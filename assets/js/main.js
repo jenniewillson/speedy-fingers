@@ -36,6 +36,7 @@ function generateWords(noLetters) {
         document.getElementById("words").innerHTML = wordsArray[0];
         console.log(wordsArray);
     });
+    startTime();
 };
 
 //checks if the word is typed correctly
@@ -76,10 +77,12 @@ function checkLetter(event) {
 
 //provides the countdown
 
-var count = 60, timer = setInterval(function () {
+function startTime() {
+    var count = 60, timer = setInterval(function () {
     $("#counter").html(count--);
     if (count == -1) clearInterval(timer);
 }, 1000);
+};
 
 //detailed instructions pop-up
 
