@@ -29,6 +29,7 @@ function getData(noLetters, cb) {
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
         document.getElementById("words").innerHTML = data;
+        document.getElementById("wordsCheck").innerHTML = data;
     });
 };
 
@@ -51,10 +52,10 @@ function checkLetter(event) {
     let sourceLetter = document.getElementById("words").innerHTML.charAt(countPress);
     let inputLetter = event.key;
     if (inputLetter === sourceLetter) {
-        console.log("correct!");
+        document.getElementById("userInput").style.color = "#49c195";
     }
     else {
-        console.log("wrong!");
+        document.getElementById("userInput").style.color = "#ee1b29";
     }
 };
 
