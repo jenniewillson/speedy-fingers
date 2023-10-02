@@ -29,20 +29,22 @@ function getData(noLetters, cb) {
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
         document.getElementById("words").innerHTML = data;
-        console.log(data);
     });
 };
 
 //checks if the word is typed correctly
 
+let countPress = 0;
+
 function iteratePress(event) {
-    var countPress = 1;
     var letterCount = document.getElementById("words").innerHTML.split("").length;
     if (countPress < letterCount) {
             countPress++;
         } else {
             countPress = 1;
-        }
+        };
+    console.log(letterCount);
+    console.log(countPress);
     };
 
 function checkLetter(event) {
