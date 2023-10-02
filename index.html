@@ -83,8 +83,40 @@
     </div>
     <!-- Link for detailed instructions and pop-up message containing them -->
     <div>
-        <a href="#" class="btn btn-outline-dark" id="d-instructions">Detailed instructions</a>
+        <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#d-instruct" id="d-instructions">Detailed instructions</a>
     </div>
+    <!-- Modal for detailed instructions -->
+    <div class="modal" id="d-instruct">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Detailed instructions</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <ul class="modal-body">
+                    <li>Select the number of letters you would like in the words you are shown.</li>
+                    <li>When you click in the box, the timer will start. You have a minute to types as many words as possible.</li> 
+                    <li>If you get a word wrong, your turn ends.</li>
+                    <li>Click the selector for the number of letters to start a new game. </li>
+                    <li>The more words you get correct, the more animals you gain in your zoo!</li>
+                    <li>If you get all your words correct, you win! Keep trying to beat your high score!</li>
+                </ul>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Footer including link to contact page and links to social media -->
     <footer>
        
