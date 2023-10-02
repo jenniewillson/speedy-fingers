@@ -10,11 +10,10 @@ $('.letter-choice').click(function () {
 
 //generates the random word to copy
 
-const baseURL = "https://random-word-api.vercel.app/api?words=1";
+const baseURL = "https://random-word-api.vercel.app/api?words=200";
 
 function getData(noLetters, cb) {
     var xhr = new XMLHttpRequest();
-
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             cb(JSON.parse(this.responseText));
@@ -28,8 +27,9 @@ function getData(noLetters, cb) {
 
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
-        document.getElementById("words").innerHTML = data;
-        document.getElementById("wordsCheck").innerHTML = data;
+        const wordsArray = data;
+        document.getElementById("words").innerHTML = wordsArray[0];
+        console.log(wordsArray);
     });
 };
 
@@ -38,11 +38,13 @@ function generateWords(noLetters) {
 let countPress = 0;
 
 function iteratePress(event) {
-    var letterCount = document.getElementById("words").innerHTML.split("").length;
+    let letterCount = document.getElementById("words").innerHTML.split("").length;
     if (countPress < letterCount) {
             countPress++;
         } else {
             countPress = 1;
+            document.getElementById("userInput").value = "";
+            document.getElementById("words").innerHTML = wordsArray[0]
         };
     console.log(letterCount);
     console.log(countPress);
