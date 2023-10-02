@@ -56,6 +56,8 @@ function checkLetter(event) {
     }
     else {
         document.getElementById("userInput").style.color = "#ee1b29";
+        countPress = 0;
+        document.getElementById("words").innerHTML = "";
     }
 };
 
