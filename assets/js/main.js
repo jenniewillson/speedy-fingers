@@ -34,6 +34,7 @@ function generateWords(noLetters) {
     getData(noLetters, function (data) {
         wordsArray = data;
         document.getElementById("words").innerHTML = wordsArray[0];
+        document.getElementById("current-score").innerHTML = 0;
         document.getElementById('userInput').focus();
         console.log(wordsArray);
     });
@@ -54,6 +55,7 @@ function iteratePress() {
         wordsArray.shift();
         document.getElementById("words").innerHTML = wordsArray[0];
         addAnimal();
+        scoreUpdate();
     };
     console.log(letterCount);
     console.log(countPress);
@@ -69,12 +71,13 @@ function checkLetter(event) {
     else {
         document.getElementById("userInput").style.color = "#ee1b29";
         clearInterval(timer);
+        wordsArray = "";
+        countPress = 0;
         setTimeout(resetGame, 3000)
         function resetGame() {
         resetTime();
-        countPress = 0;
         document.getElementById("words").innerHTML = "";
-        wordsArray = "";
+        document.getElementById("current-score").innerHTML = 0;
         shutdownZoo();
         gameOnOff();
         }
@@ -86,8 +89,10 @@ function levelUpdate(level) {
     console.log(currentLevel);
 };
 
+let score=1;
+
 function scoreUpdate() {
-    document.getElementById("current-score").innerHTML + 1;
+    document.getElementById("current-score").innerHTML = score++;
 }
 
 //provides the countdown and resets the timer
