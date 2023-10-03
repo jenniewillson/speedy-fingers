@@ -40,22 +40,6 @@ function generateWords(noLetters) {
     resetTime();
 };
 
-//adds an animal to the zoo
-
-let Animals = new Array('<i class="fa-solid fa-hippo"></i>', '<i class="fa-solid fa-otter"></i>', '<i class="fa-solid fa-dragon"></i>', '<i class="fa-solid fa-kiwi-bird"></i>', '<i class="fa-solid fa-crow"></i>', '<i class="fa-solid fa-spider"></i>', '<i class="fa-solid fa-fish-fins"></i>', '<i class="fa-solid fa-frog"></i>', '<i class="fa-solid fa-bugs"></i>', '<i class="fa-solid fa-worm"></i>', '<i class="fa-solid fa-locust"></i>');
-let zoo = new Array();
-
-function addAnimal() {
-    let randomNumber = Math.floor(Math.random() * Animals.length);
-    zoo.push(Animals[randomNumber]);
-    document.getElementById('zooAnimals').innerHTML = zoo;
-}
-
-function shutdownZoo() {
-    zoo = [];
-    document.getElementById('zooAnimals').innerHTML = "";
-}
-
 //checks if the word is typed correctly
 
 let countPress = 0;
@@ -84,18 +68,20 @@ function checkLetter(event) {
     }
     else {
         document.getElementById("userInput").style.color = "#ee1b29";
+        clearInterval(timer);
+        setTimeout(resetGame, 3000)
+        function resetGame() {
+        resetTime();
         countPress = 0;
         document.getElementById("words").innerHTML = "";
         wordsArray = "";
-        resetTime();
         shutdownZoo();
         gameOnOff();
+        }
     }
 };
 
-
-
-//provides the countdown
+//provides the countdown and resets the timer
 
 let timer = setInterval(startTime, 1000);
 let count = 60;
@@ -112,4 +98,19 @@ function resetTime() {
     timer = setInterval(startTime, 1000);
 };
 
+//adds an animal to the zoo
+
+let Animals = new Array('<i class="fa-solid fa-hippo"></i>', '<i class="fa-solid fa-otter"></i>', '<i class="fa-solid fa-dragon"></i>', '<i class="fa-solid fa-kiwi-bird"></i>', '<i class="fa-solid fa-crow"></i>', '<i class="fa-solid fa-spider"></i>', '<i class="fa-solid fa-fish-fins"></i>', '<i class="fa-solid fa-frog"></i>', '<i class="fa-solid fa-bugs"></i>', '<i class="fa-solid fa-worm"></i>', '<i class="fa-solid fa-locust"></i>');
+let zoo = new Array();
+
+function addAnimal() {
+    let randomNumber = Math.floor(Math.random() * Animals.length);
+    zoo.push(Animals[randomNumber]);
+    document.getElementById('zooAnimals').innerHTML = zoo;
+}
+
+function shutdownZoo() {
+    zoo = [];
+    document.getElementById('zooAnimals').innerHTML = "";
+}
 
