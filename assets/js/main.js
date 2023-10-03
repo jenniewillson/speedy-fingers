@@ -8,6 +8,7 @@ function gameOnOff() {
     $('#words').toggle();
     $('#input').toggle();
     $('#zoo').toggle();
+    $('#zooAnimals').innerHTML = "";
     $('#userInput').val('');
 };
 
@@ -39,6 +40,17 @@ function generateWords(noLetters) {
     startTime();
 };
 
+//adds an animal to the zoo
+
+let Animals = new Array("bear", "lion", "tiger", "cat");
+let zoo = new Array();
+
+function addAnimal() {
+    let randomNumber = Math.floor(Math.random() * Animals.length);
+    zoo.push(Animals[randomNumber]);
+    document.getElementById('zooAnimals').innerHTML = zoo;
+}
+
 //checks if the word is typed correctly
 
 let countPress = 0;
@@ -52,6 +64,7 @@ function iteratePress() {
             document.getElementById("userInput").value = "";
             wordsArray.shift();
             document.getElementById("words").innerHTML = wordsArray[0]
+            addAnimal();
         };
     console.log(letterCount);
     console.log(countPress);
