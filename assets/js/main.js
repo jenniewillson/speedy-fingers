@@ -101,6 +101,7 @@ function startTime() {
 };
 
 function resetTime() {
+    $("#counter").html(); 
     clearInterval(timer);
     count = 60;
     timer = setInterval(startTime, 1000);
