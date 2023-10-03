@@ -81,6 +81,15 @@ function checkLetter(event) {
     }
 };
 
+function levelUpdate(level) {
+    let currentLevel = level;
+    console.log(currentLevel);
+};
+
+function scoreUpdate() {
+    document.getElementById("current-score").innerHTML + 1;
+}
+
 //provides the countdown and resets the timer
 
 let timer = setInterval(startTime, 1000);
