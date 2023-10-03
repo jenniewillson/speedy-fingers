@@ -9,6 +9,7 @@ function gameOnOff() {
     $('#input').toggle();
     $('#zoo').toggle();
     $('#userInput').val('');
+    $('#score-box').toggle();
 };
 
 //generates the random word to copy
@@ -73,13 +74,13 @@ function checkLetter(event) {
         clearInterval(timer);
         wordsArray = "";
         countPress = 0;
-        setTimeout(resetGame, 3000)
+        setTimeout(resetGame, 3000);
         function resetGame() {
-        resetTime();
-        document.getElementById("words").innerHTML = "";
-        document.getElementById("current-score").innerHTML = 0;
-        shutdownZoo();
-        gameOnOff();
+            resetTime();
+            document.getElementById("words").innerHTML = "";
+            document.getElementById("current-score").innerHTML = 0;
+            shutdownZoo();
+            gameOnOff();
         }
     }
 };
@@ -89,7 +90,7 @@ function levelUpdate(level) {
     console.log(currentLevel);
 };
 
-let score=1;
+let score = 1;
 
 function scoreUpdate() {
     document.getElementById("current-score").innerHTML = score++;
@@ -106,7 +107,7 @@ function startTime() {
 };
 
 function resetTime() {
-    $("#counter").html(); 
+    $("#counter").html();
     clearInterval(timer);
     count = 60;
     timer = setInterval(startTime, 1000);

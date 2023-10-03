@@ -38,11 +38,16 @@
     <!-- Letter choice buttons to select the number of letters in the word given -->
     <section>
         <div class="container-fluid d-flex justify-content-center" id="letter-buttons">
-            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('4'); levelUpdate('4')">4-letter words</a>
-            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('5'); levelUpdate('5')">5-letter words</a>
-            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('6'); levelUpdate('6')">6-letter words</a>
-            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('7'); levelUpdate('7')">7-letter words</a>
-            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords(''); levelUpdate('random')">Random no of letters</a>
+            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('4'); levelUpdate('4')">4-letter
+                words</a>
+            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('5'); levelUpdate('5')">5-letter
+                words</a>
+            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('6'); levelUpdate('6')">6-letter
+                words</a>
+            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords('7'); levelUpdate('7')">7-letter
+                words</a>
+            <a href="#" class="btn btn-primary letter-choice" onclick="generateWords(''); levelUpdate('random')">Random
+                no of letters</a>
         </div>
     </section>
     <!-- Basic instructions - visible only when game is not being played -->
@@ -65,7 +70,7 @@
             </div>
             <!-- Score for current game shown here -->
             <div class="col-3" id="score-box">
-                <h2>Score</h2>
+                <h2 id="timer-label">Score</h2>
                 <div id="current-score"></div>
             </div>
         </div>
