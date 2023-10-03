@@ -79,85 +79,92 @@
         Your zoo: <span id="zooAnimals"></span>
     </div>
     <!-- High scores will show here -->
-    <div>
-        <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#high-scores"
-            id="high-scores-btn">High Scores</a>
-    </div>
-    <div class="modal" id="high-scores">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">High Scores</h4>
-                </div>
-
-                <!-- Modal body -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-2 score-title">4 letters</div>
-                        <div class="col-2 score-title">5 letters</div>
-                        <div class="col-2 score-title">6 letters</div>
-                        <div class="col-2 score-title">7 letters</div>
-                        <div class="col-2 score-title">random letters</div>
-                        <div class="col-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-2 score" id="4-letter"></div>
-                        <div class="col-2 score" id="5-letter"></div>
-                        <div class="col-2 score" id="6-letter"></div>
-                        <div class="col-2 score" id="7-letter"></div>
-                        <div class="col-2 score" id="random-letter"></div>
-                        <div class="col-1"></div>
-                    </div>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
+    <div class="row">
+        <div class="col-6">
+            <div class="text-center">
+                <a href="#" class="btn btn-xl btn-outline-dark" data-bs-toggle="modal" data-bs-target="#high-scores"
+                    id="high-scores-btn">High Scores</a>
             </div>
 
+            <div class="modal" id="high-scores">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">High Scores</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2 score-title">4 letters</div>
+                                <div class="col-2 score-title">5 letters</div>
+                                <div class="col-2 score-title">6 letters</div>
+                                <div class="col-2 score-title">7 letters</div>
+                                <div class="col-2 score-title">Random letters</div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2 score" id="4-letter"></div>
+                                <div class="col-2 score" id="5-letter"></div>
+                                <div class="col-2 score" id="6-letter"></div>
+                                <div class="col-2 score" id="7-letter"></div>
+                                <div class="col-2 score" id="random-letter"></div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Link for detailed instructions and pop-up message containing them -->
-    <div>
-        <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#d-instruct"
-            id="d-instructions">Detailed instructions</a>
-    </div>
-    <!-- Modal for detailed instructions -->
-    <div class="modal" id="d-instruct">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+        <!-- Link for detailed instructions and pop-up message containing them -->
+        <div class="col-6">
+            <div class="text-center">
+                <a href="#" class="btn btn-xl btn-outline-dark" data-bs-toggle="modal" data-bs-target="#d-instruct"
+                    id="d-instructions">Detailed instructions</a>
+            </div>
+            <!-- Modal for detailed instructions -->
+            <div class="modal" id="d-instruct">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Detailed instructions</h4>
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Detailed instructions</h4>
 
+                        </div>
+
+                        <!-- Modal body -->
+                        <ul class="modal-body">
+                            <li>Select the number of letters you would like in the words you are shown.</li>
+                            <li>When you click in the box, the timer will start. You have a minute to types as many
+                                words as
+                                possible.</li>
+                            <li>If you get a word wrong, your turn ends.</li>
+                            <li>Click the selector for the number of letters to start a new game. </li>
+                            <li>The more words you get correct, the more animals you gain in your zoo!</li>
+                            <li>If you get all your words correct, you win! Keep trying to beat your high score!</li>
+                        </ul>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
                 </div>
-
-                <!-- Modal body -->
-                <ul class="modal-body">
-                    <li>Select the number of letters you would like in the words you are shown.</li>
-                    <li>When you click in the box, the timer will start. You have a minute to types as many words as
-                        possible.</li>
-                    <li>If you get a word wrong, your turn ends.</li>
-                    <li>Click the selector for the number of letters to start a new game. </li>
-                    <li>The more words you get correct, the more animals you gain in your zoo!</li>
-                    <li>If you get all your words correct, you win! Keep trying to beat your high score!</li>
-                </ul>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
             </div>
         </div>
     </div>
-
 
 
     <!-- Footer including link to contact page and links to social media -->

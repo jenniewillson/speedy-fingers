@@ -110,13 +110,6 @@ body {
 
 /*DETAILED INSTRUCTIONS*/
 
-#d-instructions {
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-bottom: 5%;
-    font-weight: 600;
-}
-
 .modal-content {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -133,22 +126,21 @@ body {
     line-height: 3rem;
 }
 
-/*SCORE*/
+/*MODAL BUTTONS*/
 
-#high-scores-btn {
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-bottom: 5%;
-    font-weight: 600;
+.btn-xl {
+    width: 75%;
+    
 }
 
 /*FOOTER*/
 
 footer {
-    font-size: 150%;
+    font-size: 100%;
     text-align: center;
+    padding-top: 3%;
 }
 
 .fa-brands {
-    font-size: 250%;
+    font-size: 150%;
 }
