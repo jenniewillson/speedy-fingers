@@ -38,7 +38,7 @@ function generateWords(noLetters) {
         document.getElementById('userInput').focus();
         console.log(wordsArray);
     });
-    startTime();
+    resetTime();
 };
 
 //adds an animal to the zoo
@@ -83,6 +83,7 @@ function checkLetter(event) {
         countPress = 0;
         document.getElementById("words").innerHTML = "";
         wordsArray = "";
+        resetTime();
         gameOnOff();
     }
 };
@@ -91,10 +92,18 @@ function checkLetter(event) {
 
 //provides the countdown
 
+let timer = setInterval(startTime, 1000);
+let count = 60;
+
 function startTime() {
-    let count = 60, timer = setInterval(function () {
-        $("#counter").html(count--);
-        if (count == -1) clearInterval(timer);
-    }, 1000);
+    $("#counter").html(count--);
+    if (count == -1) clearInterval(timer);
 };
+
+function resetTime() {
+    clearInterval(timer);
+    count = 60;
+    timer = setInterval(startTime, 1000);
+};
+
 
