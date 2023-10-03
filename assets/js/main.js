@@ -8,7 +8,6 @@ function gameOnOff() {
     $('#words').toggle();
     $('#input').toggle();
     $('#zoo').toggle();
-    $('#zooAnimals').innerHTML = "";
     $('#userInput').val('');
 };
 
@@ -52,6 +51,11 @@ function addAnimal() {
     document.getElementById('zooAnimals').innerHTML = zoo;
 }
 
+function shutdownZoo() {
+    zoo = [];
+    document.getElementById('zooAnimals').innerHTML = "";
+}
+
 //checks if the word is typed correctly
 
 let countPress = 0;
@@ -84,6 +88,7 @@ function checkLetter(event) {
         document.getElementById("words").innerHTML = "";
         wordsArray = "";
         resetTime();
+        shutdownZoo();
         gameOnOff();
     }
 };
