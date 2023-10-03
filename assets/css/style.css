@@ -119,10 +119,10 @@ body {
 
 .modal-content {
     padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .modal-header h4 {
-    padding-left: 3rem;
     font-weight: 600;
     font-size: 300%;
 }
@@ -135,12 +135,11 @@ body {
 
 /*SCORE*/
 
-#high-score {
-    text-align: center;
-    font-size: 200%;
+#high-scores-btn {
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 5%;
     font-weight: 600;
-    color: #0d070c;
-    margin: 2%
 }
 
 /*FOOTER*/
