@@ -43,7 +43,7 @@ function generateWords(noLetters) {
 
 let countPress = 0;
 
-function iteratePress(event) {
+function iteratePress() {
     let letterCount = document.getElementById("words").innerHTML.split("").length;
     if (countPress < letterCount-1) {
             countPress++;
