@@ -93,8 +93,10 @@ function resetGame() {
 
 //checks the level to identify which level high score the score should be checked against
 
+let currentLevel = 0;
+
 function levelUpdate(level) {
-    let currentLevel = level;
+    currentLevel = level;
     console.log(currentLevel);
 };
 
@@ -115,9 +117,35 @@ function returnScore() {
 //Checks and updates high score
 
 function highScore() {
-    if (document.getElementById("current-score").innerHTML > document.getElementById('4-letter').innerHTML) {
+    if (currentLevel == '4') {
+        if (document.getElementById("current-score").innerHTML > document.getElementById('4-letter').innerHTML) {
         document.getElementById('4-letter').innerHTML = document.getElementById("current-score").innerHTML;
-    };
+        console.log(currentLevel);
+        console.log(document.getElementById("current-score").innerHTML);
+    }
+}
+    else if (currentLevel == '5') {
+            if (document.getElementById("current-score").innerHTML > document.getElementById('5-letter').innerHTML) {
+                document.getElementById('5-letter').innerHTML = document.getElementById("current-score").innerHTML;
+            }
+        }
+    else if (currentLevel == '6') {
+            if (document.getElementById("current-score").innerHTML > document.getElementById('6-letter').innerHTML) {
+                document.getElementById('6-letter').innerHTML = document.getElementById("current-score").innerHTML;
+            }
+        }
+    else if (currentLevel == '7') {
+            if (document.getElementById("current-score").innerHTML > document.getElementById('7-letter').innerHTML) {
+                document.getElementById('7-letter').innerHTML = document.getElementById("current-score").innerHTML;
+            }
+        }
+    else if (currentLevel == 'random') {
+            if (document.getElementById("current-score").innerHTML > document.getElementById('random-letter').innerHTML) {
+                document.getElementById('random-letter').innerHTML = document.getElementById("current-score").innerHTML;
+            }
+        }
+    console.log(currentLevel);
+    console.log(document.getElementById("current-score").innerHTML);
 };
 
 //provides the countdown and resets the timer
