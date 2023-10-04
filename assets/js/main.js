@@ -74,17 +74,19 @@ function checkLetter(event) {
         document.activeElement.blur();
         clearInterval(timer);
         wordsArray = "";
-        countPress = 0;
-        setTimeout(resetGame, 3000);
-        function resetGame() {
-            resetTime();
-            document.getElementById("words").innerHTML = "";
-            document.getElementById("current-score").innerHTML = 0;
-            shutdownZoo();
-            gameOnOff();
-        }
+        let myModal = new bootstrap.Modal(document.getElementById('game-over'));
+        myModal.toggle();
     }
 };
+
+function resetGame() {
+    resetTime();
+    countPress = 0;
+    document.getElementById("words").innerHTML = "";
+    document.getElementById("current-score").innerHTML = "";
+    shutdownZoo();
+    gameOnOff();
+}
 
 function levelUpdate(level) {
     let currentLevel = level;
