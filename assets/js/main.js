@@ -79,6 +79,8 @@ function checkLetter(event) {
     }
 };
 
+//resets the game if a word was typed incorrectly
+
 function resetGame() {
     resetTime();
     countPress = 0;
@@ -88,16 +90,26 @@ function resetGame() {
     gameOnOff();
 }
 
+//checks the level to identify which level high score the score should be checked against
+
 function levelUpdate(level) {
     let currentLevel = level;
     console.log(currentLevel);
 };
 
+//updates the score
+
 let score = 1;
 
 function scoreUpdate() {
     document.getElementById("current-score").innerHTML = score++;
-}
+};
+
+//adds score to congratulations modal
+
+function returnScore() {
+    document.getElementById("current-game-score").innerHTML = document.getElementById("current-score").innerHTML;
+};
 
 //provides the countdown and resets the timer
 
@@ -106,7 +118,13 @@ let count = 60;
 
 function startTime() {
     $("#counter").html(count--);
-    if (count == -1) clearInterval(timer);
+    if (count == -1) {
+        clearInterval(timer);
+        returnScore();
+        wordsArray = "";
+        let myModal = new bootstrap.Modal(document.getElementById('game-complete'));
+        myModal.toggle();
+}
 };
 
 function resetTime() {
@@ -131,4 +149,3 @@ function shutdownZoo() {
     zoo = [];
     document.getElementById('zooAnimals').innerHTML = "";
 }
-
