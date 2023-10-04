@@ -71,6 +71,7 @@ function checkLetter(event) {
     }
     else {
         document.getElementById("userInput").style.color = "#ee1b29";
+        document.activeElement.blur();
         clearInterval(timer);
         wordsArray = "";
         countPress = 0;
