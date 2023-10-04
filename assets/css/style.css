@@ -23,6 +23,7 @@ body {
 .letter-choice {
     margin-right: 10px;
     margin-left: 10px;
+    visibility: visible;
 }
 
 #letter-buttons {

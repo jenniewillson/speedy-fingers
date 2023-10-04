@@ -10,6 +10,7 @@ function gameOnOff() {
     $('#zoo').toggle();
     $('#userInput').val('');
     $('#score-box').toggle();
+    $('.letter-choice').toggle();
 };
 
 //generates the random word to copy
