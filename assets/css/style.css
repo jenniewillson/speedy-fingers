@@ -160,6 +160,8 @@ body {
 /*FOOTER*/
 
 footer {
+    position: fixed;
+    bottom: 0px;
     font-size: 100%;
     text-align: center;
     padding-top: 3%;
@@ -167,4 +169,12 @@ footer {
 
 .fa-brands {
     font-size: 150%;
+}
+
+footer a:hover {
+    color: #49c195;
+}
+
+footer i:hover {
+    transform: scale(1.5, 1.5);
 }
