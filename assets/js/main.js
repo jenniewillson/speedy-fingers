@@ -80,13 +80,13 @@ function checkLetter(event) {
     }
 };
 
-//resets the game if a word was typed incorrectly
+//resets the game
 
 function resetGame() {
     resetTime();
     countPress = 0;
     document.getElementById("words").innerHTML = "";
-    document.getElementById("current-score").innerHTML = "";
+    score = 1;
     shutdownZoo();
     gameOnOff();
 }
