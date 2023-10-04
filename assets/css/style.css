@@ -82,6 +82,7 @@ body {
     padding-bottom: 2%;
     background-color: #49c195;
     display: none;
+    border: #0d070c solid 7px;
 }
 
 /*USER INPUT*/
