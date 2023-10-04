@@ -121,6 +121,20 @@ body {
     font-size: 500%;
 }
 
+/*HIGH SCORES*/
+
+.score-title {
+    text-align: center;
+    text-decoration: solid;
+    font-size: 150%;
+}
+
+.score {
+    text-align: center;
+    color: #49c195;
+    font-size: 150%;
+}
+
 /*ZOO*/
 
 #zoo {

@@ -112,6 +112,14 @@ function returnScore() {
     document.getElementById("current-game-score").innerHTML = document.getElementById("current-score").innerHTML;
 };
 
+//Checks and updates high score
+
+function highScore() {
+    if (document.getElementById("current-score").innerHTML > document.getElementById('4-letter').innerHTML) {
+        document.getElementById('4-letter').innerHTML = document.getElementById("current-score").innerHTML;
+    };
+};
+
 //provides the countdown and resets the timer
 
 let timer = setInterval(startTime, 1000);
@@ -120,6 +128,7 @@ let count = 60;
 function startTime() {
     $("#counter").html(count--);
     if (count == -1) {
+        highScore();
         clearInterval(timer);
         returnScore();
         wordsArray = "";
