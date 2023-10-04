@@ -85,52 +85,57 @@
         </div>
     </div>
     <!-- Modal for incorrect letter typed -->
-<div class="modal" id="game-over">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+    <div class="modal" id="game-over">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Game over!</h4>
-            </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Game over!</h4>
+                </div>
 
-            <!-- Modal body -->
-            <div>
-                Sorry, you typed the last word incorrectly and so this game is over and your zoo is closed! Don't forget that accuracy is more important than speed! Select a level to try again!
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="resetGame()";>Close</button>
-            </div>
+                <!-- Modal body -->
+                <div class="game-end-modal">
+                    <p>Sorry, you typed the last word incorrectly and so this game is over and your zoo is closed.</p> 
+                    <p>Don't forget that accuracy is more important than speed!</p> 
+                    <p>Select a level to try again!</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="resetGame()"
+                        ;>Close</button>
+                </div>
 
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal for game complete typed -->
-<div class="modal" id="game-complete">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Congratulations!</h4>
-            </div>
-
-            <!-- Modal body -->
-            <div>
-                You completed 60 seconds and didn't type any words incorrectly! Well done! You scored <span id="current-game-score"></span>. 
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"  onclick="resetGame()">Close</button>
             </div>
 
         </div>
-
     </div>
-</div>
+
+    <!-- Modal for game complete typed -->
+    <div class="modal" id="game-complete">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Congratulations!</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="game-end-modal">
+                    <p>You completed 60 seconds and didn't type any words incorrectly!</p>
+                    <p>You scored <span id="current-game-score"></span>!</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                        onclick="resetGame()">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- Zoo area that will accumulate an animal for every word the user gets correct -->
     <div id="zoo">

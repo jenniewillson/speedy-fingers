@@ -75,9 +75,12 @@ body {
 #words {
     color: #0d070c;
     font-weight: 600;
-    font-size: 500%;
+    font-size: 800%;
+    margin: auto;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #49c195;
     display: none;
 }
 
@@ -154,7 +157,12 @@ body {
 
 .btn-xl {
     width: 75%;
+}
 
+/*GAME END MODALS*/
+
+.game-end-modal {
+    font-size: 200%;
 }
 
 /*FOOTER*/
