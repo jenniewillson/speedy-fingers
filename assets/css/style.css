@@ -85,6 +85,12 @@ body {
     border: #0d070c solid 7px;
 }
 
+/*ERROR IF API DOES NOT WORK*/
+
+#error {
+    font-size: 25%;
+}
+
 /*USER INPUT*/
 
 #input {

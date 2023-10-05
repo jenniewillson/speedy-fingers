@@ -18,15 +18,21 @@ function gameOnOff() {
 
 //generates the random word to copy
 
-const baseURL = "https://random-word-api.vercel.app/api?words=200";
+const baseURL = "https://rdom-word-api.vercel.app/api?words=200";
 
 function getData(noLetters, cb) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                //Successfully called API
             cb(JSON.parse(this.responseText));
+        } else {
+            document.getElementById("error").innerHTML = "Sorry, we were unable to find any words - please try again later!";
         }
-    };
+        
+    }
+}
 
     xhr.open("GET", baseURL + "&length=" + noLetters);
     xhr.send();
