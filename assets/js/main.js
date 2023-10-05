@@ -18,7 +18,7 @@ function gameOnOff() {
 
 //generates the random word to copy
 
-const baseURL = "https://rdom-word-api.vercel.app/api?words=200";
+const baseURL = "https://random-word-api.vercel.app/api?words=200";
 
 function getData(noLetters, cb) {
     var xhr = new XMLHttpRequest();
