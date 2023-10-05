@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // hides and shows sections depending on whether game is in progress
 
 $('.letter-choice').click(gameOnOff);
@@ -11,7 +13,7 @@ function gameOnOff() {
     $('#userInput').val('');
     $('#score-box').toggle();
     $('.letter-choice').toggle();
-};
+}
 
 //generates the random word to copy
 
@@ -28,7 +30,7 @@ function getData(noLetters, cb) {
     xhr.open("GET", baseURL + "&length=" + noLetters);
     xhr.send();
 
-};
+}
 
 let wordsArray;
 
@@ -41,7 +43,7 @@ function generateWords(noLetters) {
         console.log(wordsArray);
     });
     resetTime();
-};
+}
 
 //checks if the word is typed correctly
 
@@ -58,11 +60,11 @@ function iteratePress() {
         document.getElementById("words").innerHTML = wordsArray[0];
         addAnimal();
         scoreUpdate();
-    };
+    }
     console.log(letterCount);
     console.log(countPress);
     console.log(wordsArray);
-};
+}
 
 function checkLetter(event) {
     let sourceLetter = document.getElementById("words").innerHTML.charAt(countPress);
@@ -78,7 +80,7 @@ function checkLetter(event) {
         let myModal = new bootstrap.Modal(document.getElementById('game-over'));
         myModal.toggle();
     }
-};
+}
 
 //resets the game
 
@@ -86,6 +88,7 @@ function resetGame() {
     resetTime();
     countPress = 0;
     document.getElementById("words").innerHTML = "";
+    document.getElementById("current-score").innerHTML = 0;
     score = 1;
     shutdownZoo();
     gameOnOff();
@@ -98,7 +101,7 @@ let currentLevel = 0;
 function levelUpdate(level) {
     currentLevel = level;
     console.log(currentLevel);
-};
+}
 
 //updates the score
 
@@ -106,47 +109,47 @@ let score = 1;
 
 function scoreUpdate() {
     document.getElementById("current-score").innerHTML = score++;
-};
+}
 
 //adds score to congratulations modal
 
 function returnScore() {
     document.getElementById("current-game-score").innerHTML = document.getElementById("current-score").innerHTML;
-};
+}
 
 //Checks and updates high score
 
 function highScore() {
     if (currentLevel == '4') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('4-letter').innerHTML) {
-        document.getElementById('4-letter').innerHTML = document.getElementById("current-score").innerHTML;
-        console.log(currentLevel);
-        console.log(document.getElementById("current-score").innerHTML);
+            document.getElementById('4-letter').innerHTML = document.getElementById("current-score").innerHTML;
+            console.log(currentLevel);
+            console.log(document.getElementById("current-score").innerHTML);
+        }
     }
-}
     else if (currentLevel == '5') {
-            if (document.getElementById("current-score").innerHTML > document.getElementById('5-letter').innerHTML) {
-                document.getElementById('5-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            }
+        if (document.getElementById("current-score").innerHTML > document.getElementById('5-letter').innerHTML) {
+            document.getElementById('5-letter').innerHTML = document.getElementById("current-score").innerHTML;
         }
+    }
     else if (currentLevel == '6') {
-            if (document.getElementById("current-score").innerHTML > document.getElementById('6-letter').innerHTML) {
-                document.getElementById('6-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            }
+        if (document.getElementById("current-score").innerHTML > document.getElementById('6-letter').innerHTML) {
+            document.getElementById('6-letter').innerHTML = document.getElementById("current-score").innerHTML;
         }
+    }
     else if (currentLevel == '7') {
-            if (document.getElementById("current-score").innerHTML > document.getElementById('7-letter').innerHTML) {
-                document.getElementById('7-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            }
+        if (document.getElementById("current-score").innerHTML > document.getElementById('7-letter').innerHTML) {
+            document.getElementById('7-letter').innerHTML = document.getElementById("current-score").innerHTML;
         }
+    }
     else if (currentLevel == 'random') {
-            if (document.getElementById("current-score").innerHTML > document.getElementById('random-letter').innerHTML) {
-                document.getElementById('random-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            }
+        if (document.getElementById("current-score").innerHTML > document.getElementById('random-letter').innerHTML) {
+            document.getElementById('random-letter').innerHTML = document.getElementById("current-score").innerHTML;
         }
+    }
     console.log(currentLevel);
     console.log(document.getElementById("current-score").innerHTML);
-};
+}
 
 //provides the countdown and resets the timer
 
@@ -162,20 +165,20 @@ function startTime() {
         wordsArray = "";
         let myModal = new bootstrap.Modal(document.getElementById('game-complete'));
         myModal.toggle();
+    }
 }
-};
 
 function resetTime() {
     $("#counter").html();
     clearInterval(timer);
     count = 60;
     timer = setInterval(startTime, 1000);
-};
+}
 
 //adds an animal to the zoo
 
 let Animals = new Array('<i class="fa-solid fa-hippo"></i>', '<i class="fa-solid fa-otter"></i>', '<i class="fa-solid fa-dragon"></i>', '<i class="fa-solid fa-kiwi-bird"></i>', '<i class="fa-solid fa-crow"></i>', '<i class="fa-solid fa-spider"></i>', '<i class="fa-solid fa-fish-fins"></i>', '<i class="fa-solid fa-frog"></i>', '<i class="fa-solid fa-bugs"></i>', '<i class="fa-solid fa-worm"></i>', '<i class="fa-solid fa-locust"></i>');
-let zoo = new Array();
+let zoo = [];
 
 function addAnimal() {
     let randomNumber = Math.floor(Math.random() * Animals.length);
