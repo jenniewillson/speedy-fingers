@@ -33,15 +33,25 @@
 
 <body>
 
+    <header class="header">
+        <!-- SPEEDY FINGERS Logo for top of page -->
+        <h1>
+            <img class="logo" src="assets/images/logo.png" alt="Speedy fingers" aria-label="Speedy fingers logo" />
+        </h1>
+    </header>
+
     <!-- CONTACT FORM -->
-    <form id="form">
+    <div id="contact-form">
         <br>
+    <form id="form">
         <div class="field">
             <input type="text" name="name" id="name" placeholder="name" required><br>
         </div>
+        <br>
         <div class="field"> 
-            <input type="email" name="email" id="email" placeholder="email"><br><br>
+            <input type="email" name="email" id="email" placeholder="email"><br>
         </div>
+        <br>
         <div class="field"> 
             <textarea rows="10" name="message" id="message" placeholder="Message" required></textarea>
         </div>
@@ -49,6 +59,8 @@
             <input type="submit" id="button" value="Send feedback">
         </div>
     </form>
+    </div>
+
 <footer>
 
 </footer>
