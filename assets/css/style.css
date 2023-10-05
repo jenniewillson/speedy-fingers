@@ -92,6 +92,7 @@ body {
     font-weight: 600;
     font-size: 300%;
     display: none;
+    text-align: center;
 }
 
 #input label {
@@ -185,10 +186,12 @@ body {
 footer {
     position: fixed;
     bottom: 0px;
+    background-color: #ffffff;
     font-size: 100%;
     text-align: center;
     width: 100%;
-    padding-top: 3%;
+    padding-top: 2px;
+    border-top: #0d070c solid 2px;
 }
 
 .fa-brands {

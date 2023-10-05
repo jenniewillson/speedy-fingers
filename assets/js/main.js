@@ -13,6 +13,7 @@ function gameOnOff() {
     $('#userInput').val('');
     $('#score-box').toggle();
     $('.letter-choice').toggle();
+    $('#high-score-d-instruct').toggle();
 }
 
 //generates the random word to copy
