@@ -197,3 +197,24 @@ function shutdownZoo() {
     zoo = [];
     document.getElementById('zooAnimals').innerHTML = "";
 }
+
+const emailbtn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailbtn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_nui9tuv';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                emailbtn.value = 'Send Email';
+                alert('Sent!');
+            }, (err) => {
+                emailbtn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
