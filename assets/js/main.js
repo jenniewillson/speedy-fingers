@@ -1,11 +1,21 @@
 /*jshint esversion: 6 */
 
 $(function () {
+    if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
     document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
+    };
+    if (localStorage.getItem('5-letter-local') !== null && localStorage.getItem('5-letter-local') !== undefined) {
     document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
+    };
+    if (localStorage.getItem('6-letter-local') !== null && localStorage.getItem('6-letter-local') !== undefined) {
     document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
+    };
+    if (localStorage.getItem('7-letter-local') !== null && localStorage.getItem('7-letter-local') !== undefined) {
     document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
+    };
+    if (localStorage.getItem('random-letter-local') !== null && localStorage.getItem('random-letter-local') !== undefined) {
     document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
+    };
 });
 
 // hides and shows sections depending on whether game is in progress
