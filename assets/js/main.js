@@ -234,10 +234,16 @@ document.getElementById('form').addEventListener('submit', function (event) {
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 emailbtn.value = 'Send Email';
-                alert('Sent!');
+                document.getElementById("form").reset();
             }, (err) => {
                 emailbtn.value = 'Send Email';
                 alert(JSON.stringify(err));
             });
     })
+};
+
+if (document.getElementById('email-sent-ack') !== null) {
+document.getElementById('email-sent-ack').addEventListener('click', function () {
+    window.location.href = 'index.html';
+})
 };

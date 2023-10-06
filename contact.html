@@ -58,9 +58,29 @@
             <textarea rows="10" name="message" id="message" placeholder="Message" required></textarea>
         </div>
         <div class="field"> 
-            <input type="submit" id="button" value="Send feedback">
+            <input type="submit" id="button" value="Send feedback" data-bs-toggle="modal" data-bs-target="#email-sent">
         </div>
     </form>
+    </div>
+    <div class="modal" id="email-sent">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thank you!</h4>
+                </div>
+    
+                <!-- Modal body -->
+                <p class="modal-body">You message has been sent! Thank you very much for contacting us!</p>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button id="email-sent-ack" type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+                </div>
+    
+            </div>
+        </div>
     </div>
 
 <footer>
