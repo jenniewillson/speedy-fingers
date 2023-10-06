@@ -102,8 +102,9 @@ function checkLetter(event) {
         document.activeElement.blur();
         clearInterval(timer);
         wordsArray = "";
-        let myModal = new bootstrap.Modal(document.getElementById('game-over'));
-        myModal.toggle();
+        let gameOverModal = new bootstrap.Modal(document.getElementById('game-over'));
+        gameOverModal.toggle();
+        document.getElementById('game-end-modal-button').focus();
     }
 }
 
@@ -194,6 +195,7 @@ function startTime() {
         wordsArray = "";
         let myModal = new bootstrap.Modal(document.getElementById('game-complete'));
         myModal.toggle();
+        document.getElementById('game-won-modal-button').focus();
     }
 }
 
@@ -234,6 +236,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 emailbtn.value = 'Send Email';
+                document.getElementById("email-sent-ack").focus();
                 document.getElementById("form").reset();
             }, (err) => {
                 emailbtn.value = 'Send Email';

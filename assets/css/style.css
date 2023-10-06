@@ -49,11 +49,15 @@ a {
     padding-bottom: 1rem;
     border-radius: 10%;
     width: 35%;
-    border: 5px solid #ee1b29;
+    border: 5px solid #0d070c;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#basic-instructions i {
+    color: #ee1b29;
 }
 
 /*TIMER*/
