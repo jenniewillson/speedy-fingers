@@ -10,6 +10,11 @@ body {
     padding-bottom: 10%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*LOGO*/
 
 .logo {
@@ -81,7 +86,8 @@ body {
     text-align: center;
     background-color: #49c195;
     display: none;
-    border: #0d070c solid 7px;}
+    border: #0d070c solid 7px;
+}
 
 /*ERROR IF API DOES NOT WORK*/
 
@@ -236,4 +242,20 @@ footer i:hover {
 
 #email {
     width: 80%;
+}
+
+/*404 PAGE*/
+
+#broken-link {
+    background: #49c195;
+}
+
+#broken-link-box {
+    background: #ee1b29;
+    color: #ffffff;
+    border: 3px solid #0d070c;
+    text-align: center;
+    padding: 10px;
+    margin: 5%;
+    line-height: 30px;
 }
