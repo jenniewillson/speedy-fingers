@@ -110,7 +110,7 @@ function checkLetter(event) {
 //resets the game
 
 function resetGame() {
-    resetTime();
+    $("#counter").html();
     countPress = 0;
     document.getElementById("words").innerHTML = "";
     document.getElementById("current-score").innerHTML = 0;
@@ -181,7 +181,7 @@ function highScore() {
 
 //provides the countdown and resets the timer
 
-let timer = setInterval(startTime, 1000);
+let timer;
 let count = 60;
 
 function startTime() {
