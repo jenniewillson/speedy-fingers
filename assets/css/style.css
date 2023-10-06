@@ -182,7 +182,27 @@ a {
 /*MODAL BUTTONS*/
 
 .btn-xl {
-    width: 75%;
+    width: 50%;
+}
+
+#d-instructions {
+    background-color: #ee1b29;
+    color: #ffffff;
+    height: 100px;
+    font-size: xx-large;
+    font-weight: 600;
+    line-height: 80px;
+    border: #0d070c solid 4px;
+}
+
+#high-scores-btn {
+    background-color: #49c195;
+    color: #0d070c;
+    height: 100px;
+    font-size: xx-large;
+    font-weight: 600;
+    line-height: 80px;
+    border: #0d070c solid 4px;
 }
 
 /*GAME END MODALS*/
