@@ -240,6 +240,11 @@ footer i:hover {
     transform: scale(1.5, 1.5);
 }
 
+#message-link {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 /*CONTACT FORM*/
 
 #contact-form {
