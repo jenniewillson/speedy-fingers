@@ -47,7 +47,7 @@ function getData(noLetters, cb) {
 
 }
 
-let wordsArray;
+let wordsArray = [];
 
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
