@@ -222,8 +222,8 @@ function shutdownZoo() {
 
 const emailbtn = document.getElementById('button');
 
-document.getElementById('form')
-    .addEventListener('submit', function (event) {
+if (document.getElementById('form') !== null) {
+document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
 
         emailbtn.value = 'Sending...';
@@ -239,4 +239,5 @@ document.getElementById('form')
                 emailbtn.value = 'Send Email';
                 alert(JSON.stringify(err));
             });
-    });
+    })
+};
