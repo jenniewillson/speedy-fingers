@@ -81,7 +81,7 @@ a {
 #words {
     color: #0d070c;
     font-weight: 600;
-    font-size: 800%;
+    font-size: 600%;
     margin: auto;
     text-align: center;
     background-color: #49c195;
@@ -245,10 +245,6 @@ footer i:hover {
 }
 
 /*404 PAGE*/
-
-#broken-link {
-    background: #49c195;
-}
 
 #broken-link-box {
     background: #ee1b29;

@@ -76,14 +76,10 @@
             </div>
         </div>
         <!-- Input field for user to attempt to type the word that is generated. Clicking here triggers game/countdown start -->
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6" id="input">
-                <label for="userInput">Word:</label><br>
-                <input type="text" id="userInput" name="userInput"
+            <div id="input">
+                <input type="text" id="userInput" name="userInput" placeholder="type here"
                     onkeyup="checkLetter(event); iteratePress(event);"><br>
             </div>
-        </div>
     </div>
     <!-- Modal for incorrect letter typed -->
     <div class="modal" id="game-over">
