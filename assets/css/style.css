@@ -42,18 +42,19 @@ a {
     background-color: #49c195;
     color: #ffffff;
     font-weight: 600;
-    font-size: larger;
+    font-size: 25px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 10%;
-    width: 35%;
+    width: 60%;
     border: 5px solid #0d070c;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 #basic-instructions i {
