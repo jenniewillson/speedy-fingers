@@ -214,7 +214,7 @@ let zoo = [];
 function addAnimal() {
     let randomNumber = Math.floor(Math.random() * Animals.length);
     zoo.push(Animals[randomNumber]);
-    document.getElementById('zooAnimals').innerHTML = zoo;
+    document.getElementById('zooAnimals').innerHTML = zoo.join(" ");
 }
 
 function shutdownZoo() {
