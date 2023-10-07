@@ -149,33 +149,33 @@ function highScore() {
     if (currentLevel == '4') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('4-letter').innerHTML) {
             document.getElementById('4-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            localStorage.setItem('4-letter-local', document.getElementById('4-letter').innerHTML);
         }
     }
     else if (currentLevel == '5') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('5-letter').innerHTML) {
             document.getElementById('5-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            localStorage.setItem('5-letter-local', document.getElementById('5-letter').innerHTML);
         }
     }
     else if (currentLevel == '6') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('6-letter').innerHTML) {
             document.getElementById('6-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            localStorage.setItem('6-letter-local', document.getElementById('6-letter').innerHTML);
         }
     }
     else if (currentLevel == '7') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('7-letter').innerHTML) {
             document.getElementById('7-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            localStorage.setItem('7-letter-local', document.getElementById('7-letter').innerHTML);
         }
     }
     else if (currentLevel == 'random') {
         if (document.getElementById("current-score").innerHTML > document.getElementById('random-letter').innerHTML) {
             document.getElementById('random-letter').innerHTML = document.getElementById("current-score").innerHTML;
-            localStorage.setItem('random-letter-local', document.getElementById('random-letter').innerHTML);
         }
     }
+    localStorage.setItem('4-letter-local', document.getElementById('4-letter').innerHTML);
+    localStorage.setItem('5-letter-local', document.getElementById('5-letter').innerHTML);
+    localStorage.setItem('6-letter-local', document.getElementById('6-letter').innerHTML);
+    localStorage.setItem('7-letter-local', document.getElementById('7-letter').innerHTML);
+    localStorage.setItem('random-letter-local', document.getElementById('random-letter').innerHTML);
     console.log(currentLevel);
     console.log(document.getElementById("current-score").innerHTML);
 }
