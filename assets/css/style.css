@@ -15,6 +15,13 @@ a {
     color: inherit;
 }
 
+#noscript {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ee1b29;
+    text-align: center;
+}
+
 /*LOGO*/
 
 .logo {
