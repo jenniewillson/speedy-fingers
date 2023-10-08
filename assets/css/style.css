@@ -39,8 +39,12 @@ a {
     font-size: 30px;
     border: #0d070c solid 3px;
     text-align: center;
-    margin: 2rem;
-    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 20px;
+    max-width: 70%;
+
 }
 
 /*OPTIONS*/
@@ -66,7 +70,7 @@ a {
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-radius: 10%;
+    border-radius: 20px;
     width: 60%;
     border: 5px solid #0d070c;
     margin-right: auto;
@@ -213,24 +217,22 @@ a {
     width: 75%;
 }
 
-#d-instructions {
-    background-color: #ee1b29;
-    color: #ffffff;
-    height: 100px;
-    font-size: xx-large;
-    font-weight: 600;
-    line-height: 80px;
-    border: #0d070c solid 4px;
-}
-
-#high-scores-btn {
-    background-color: #49c195;
+.scores-instruct {
     color: #0d070c;
     height: 100px;
     font-size: xx-large;
     font-weight: 600;
     line-height: 80px;
     border: #0d070c solid 4px;
+    border-radius: 20px;
+}
+
+#d-instruct-btn {
+    background-color: #ee1b29;
+}
+
+#high-scores-btn {
+    background-color: #49c195;
 }
 
 /*GAME END MODALS*/
