@@ -194,8 +194,8 @@ function startTime() {
         clearInterval(timer);
         returnScore();
         wordsArray = "";
-        let myModal = new bootstrap.Modal(document.getElementById('game-complete'));
-        myModal.toggle();
+        let gameCompleteModal = new bootstrap.Modal(document.getElementById('game-complete'));
+        gameCompleteModal.toggle();
         document.getElementById('game-won-modal-button').focus();
     }
 }
