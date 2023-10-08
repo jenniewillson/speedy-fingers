@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto',
         sans-serif;
     padding-bottom: 10%;
+    font-weight: 600;
 }
 
 a {
@@ -17,7 +18,6 @@ a {
 
 #noscript {
     font-size: 50px;
-    font-weight: 600;
     color: #ee1b29;
     text-align: center;
 }
@@ -64,7 +64,6 @@ a {
 #basic-instructions {
     background-color: #49c195;
     color: #ffffff;
-    font-weight: 600;
     font-size: 25px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -94,13 +93,11 @@ a {
 
 #counter {
     color: #ee1b29;
-    font-weight: 600;
     font-size: 500%;
 }
 
 #timer-label {
     color: #0d070c;
-    font-weight: 600;
     font-size: 200%;
 }
 
@@ -108,7 +105,6 @@ a {
 
 #words {
     color: #0d070c;
-    font-weight: 600;
     font-size: 600%;
     margin: auto;
     text-align: center;
@@ -127,7 +123,6 @@ a {
 
 #input {
     color: #0d070c;
-    font-weight: 600;
     font-size: 300%;
     display: none;
     text-align: center;
@@ -151,13 +146,11 @@ a {
 
 #score-label {
     color: #0d070c;
-    font-weight: 600;
     font-size: 200%;
 }
 
 #current-score {
     color: #0d070c;
-    font-weight: 600;
     font-size: 500%;
 }
 
@@ -182,7 +175,6 @@ a {
     background-color: #ee1b29;
     color: #ffffff;
     font-size: 300%;
-    font-weight: 600;
     margin: 2%;
     border: 5px solid #0d070c;
     padding: 2rem;
@@ -201,7 +193,6 @@ a {
 }
 
 .modal-header h4 {
-    font-weight: 600;
     font-size: 300%;
 }
 
@@ -214,25 +205,18 @@ a {
 /*MODAL BUTTONS*/
 
 .btn-xl {
-    width: 75%;
+    min-width: 65%;
 }
 
 .scores-instruct {
     color: #0d070c;
-    height: 100px;
-    font-size: xx-large;
-    font-weight: 600;
+    height: 6rem;
+    font-size: x-large;
     line-height: 80px;
     border: #0d070c solid 4px;
     border-radius: 20px;
-}
-
-#d-instruct-btn {
-    background-color: #ee1b29;
-}
-
-#high-scores-btn {
     background-color: #49c195;
+    font-weight: 600;
 }
 
 /*GAME END MODALS*/
@@ -268,7 +252,6 @@ footer i:hover {
 
 #message-link {
     text-decoration: underline;
-    font-weight: 600;
 }
 
 /*CONTACT FORM*/
