@@ -111,7 +111,8 @@ function checkLetter(event) {
 //resets the game
 
 function resetGame() {
-    $("#counter").html();
+    $("#counter").html("");
+    clearInterval(timer);
     countPress = 0;
     document.getElementById("words").innerHTML = "";
     document.getElementById("current-score").innerHTML = 0;
