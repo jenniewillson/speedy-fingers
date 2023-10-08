@@ -94,6 +94,10 @@ function iteratePress() {
 function checkLetter(event) {
     let sourceLetter = document.getElementById("words").innerHTML.charAt(countPress);
     let inputLetter = event.key;
+    if (event.keyCode == 32 || event.keyCode == 13) {
+        e.preventDefault();
+    }
+    else {
     if (inputLetter === sourceLetter) {
         document.getElementById("userInput").style.color = "#49c195";
     }
@@ -106,6 +110,7 @@ function checkLetter(event) {
         gameOverModal.toggle();
         document.getElementById('game-end-modal-button').focus();
     }
+}
 }
 
 //resets the game
