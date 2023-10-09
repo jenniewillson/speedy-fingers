@@ -46,8 +46,7 @@ a {
     margin-right: auto;
     margin-top: 2rem;
     border-radius: 20px;
-    max-width: 70%;
-
+    max-width: 90%;
 }
 
 /*OPTIONS*/
@@ -90,7 +89,7 @@ a {
 #timer-box {
     text-align: center;
     padding-top: 5%;
-    display:none;
+    display: none;
 }
 
 #counter {
@@ -263,7 +262,7 @@ footer i:hover {
     background: #49c195;
     margin: 20px 15px 40px 15px;
     border: 3px solid #0d070c;
-    max-width: 40%;
+    max-width: 70%;
     max-height: 80%;
     padding: 2rem;
     margin-left: auto;
