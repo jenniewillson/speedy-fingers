@@ -2,19 +2,19 @@
 
 $(function () {
     if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
-    document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
+        document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
     };
     if (localStorage.getItem('5-letter-local') !== null && localStorage.getItem('5-letter-local') !== undefined) {
-    document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
+        document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
     };
     if (localStorage.getItem('6-letter-local') !== null && localStorage.getItem('6-letter-local') !== undefined) {
-    document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
+        document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
     };
     if (localStorage.getItem('7-letter-local') !== null && localStorage.getItem('7-letter-local') !== undefined) {
-    document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
+        document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
     };
     if (localStorage.getItem('random-letter-local') !== null && localStorage.getItem('random-letter-local') !== undefined) {
-    document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
+        document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
     };
 });
 
@@ -44,13 +44,13 @@ function getData(noLetters, cb) {
         if (this.readyState == 4) {
             if (this.status == 200) {
                 //Successfully called API
-            cb(JSON.parse(this.responseText));
-        } else {
-            document.getElementById("error").innerHTML = "Sorry, we were unable to find any words - please try again later!";
+                cb(JSON.parse(this.responseText));
+            } else {
+                document.getElementById("error").innerHTML = "Sorry, we were unable to find any words - please try again later!";
+            }
+
         }
-        
-    }
-}
+    };
 
     xhr.open("GET", baseURL + "&length=" + noLetters);
     xhr.send();
@@ -98,19 +98,19 @@ function checkLetter(event) {
         e.preventDefault();
     }
     else {
-    if (inputLetter === sourceLetter) {
-        document.getElementById("userInput").style.color = "#49c195";
+        if (inputLetter === sourceLetter) {
+            document.getElementById("userInput").style.color = "#49c195";
+        }
+        else {
+            document.getElementById("userInput").style.color = "#ee1b29";
+            document.activeElement.blur();
+            clearInterval(timer);
+            wordsArray = "";
+            let gameOverModal = new bootstrap.Modal(document.getElementById('game-over'));
+            gameOverModal.toggle();
+            document.getElementById('game-end-modal-button').focus();
+        }
     }
-    else {
-        document.getElementById("userInput").style.color = "#ee1b29";
-        document.activeElement.blur();
-        clearInterval(timer);
-        wordsArray = "";
-        let gameOverModal = new bootstrap.Modal(document.getElementById('game-over'));
-        gameOverModal.toggle();
-        document.getElementById('game-end-modal-button').focus();
-    }
-}
 }
 
 //resets the game
@@ -194,7 +194,7 @@ let count = 60;
 function startTime() {
     $("#counter").html(count--);
     if (count == -1) {
-        document.activeElement.blur(); 
+        document.activeElement.blur();
         highScore();
         clearInterval(timer);
         returnScore();
@@ -231,9 +231,8 @@ function shutdownZoo() {
 const emailbtn = document.getElementById('button');
 
 if (document.getElementById('form') !== null) {
-document.getElementById('form').addEventListener('submit', function (event) {
+    document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
-
         emailbtn.value = 'Sending...';
 
         const serviceID = 'default_service';
@@ -248,11 +247,17 @@ document.getElementById('form').addEventListener('submit', function (event) {
                 emailbtn.value = 'Send Email';
                 alert(JSON.stringify(err));
             });
-    })
+        // Get the modal element
+        var modal = document.getElementById('email-sent');
+
+        // Open the modal
+        modal.style.display = "block";
+    });
 };
 
+
 if (document.getElementById('email-sent-ack') !== null) {
-document.getElementById('email-sent-ack').addEventListener('click', function () {
-    window.location.href = 'index.html';
-})
+    document.getElementById('email-sent-ack').addEventListener('click', function () {
+        window.location.href = 'index.html';
+    });
 };
