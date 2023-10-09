@@ -1,388 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- SPEEDY FINGERS! - JENNIE WILLSON - index.html -->
+<!-- SPEEDY FINGERS! - JENNIE WILLSON - index.html -->
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The simple but effective way to improve your typing!"
-    />
-    <meta
-      name="keywords"
-      content="typing practice keyboard speed accuracy game fun"
-    />
+    <meta name="description" content="The simple but effective way to improve your typing!" />
+    <meta name="keywords" content="typing practice keyboard speed accuracy game fun" />
     <!-- FAVICON -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <title>
-      Speedy Fingers | The simple but effective way to improve your typing!
+        Speedy Fingers | The simple but effective way to improve your typing!
     </title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/7dc93aa71c.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/7dc93aa71c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
     <script src="assets/js/main.js" defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <!-- SPEEDY FINGERS Logo for top of page -->
-      <a href="index.html">
-        <h1>
-          <img
-            class="logo"
-            src="assets/images/logo.png"
-            alt="Speedy fingers"
-            aria-label="Speedy fingers logo"
-          />
-        </h1>
-      </a>
+        <!-- SPEEDY FINGERS Logo for top of page -->
+        <a href="index.html">
+            <h1>
+                <img class="logo" src="assets/images/logo.png" alt="Speedy fingers" aria-label="Speedy fingers logo" />
+            </h1>
+        </a>
     </header>
 
     <!-- Informs mobile users that they are unable to play on a mobile -->
-    <div class="d-sm-block d-md-none tagline">
-    <br />Sorry, this game is designed for use on a larger device with a manual
-      keyboard. <br /><br />
+    <div class="d-sm-block d-md-none mob-message">
+        <br />Sorry, this game is designed for use on a larger device with a manual
+        keyboard. <br /><br />
     </div>
 
     <!-- Letter choice buttons to select the number of letters in the word given -->
     <div class="d-none d-md-block">
-      <section>
-        <div
-          class="container-fluid d-flex justify-content-center"
-          id="letter-buttons"
-        >
-          <a
-            href="#"
-            class="btn btn-primary letter-choice"
-            onclick="generateWords('4'); levelUpdate('4')"
-            >4-letter words</a
-          >
-          <a
-            href="#"
-            class="btn btn-primary letter-choice"
-            onclick="generateWords('5'); levelUpdate('5')"
-            >5-letter words</a
-          >
-          <a
-            href="#"
-            class="btn btn-primary letter-choice"
-            onclick="generateWords('6'); levelUpdate('6')"
-            >6-letter words</a
-          >
-          <a
-            href="#"
-            class="btn btn-primary letter-choice"
-            onclick="generateWords('7'); levelUpdate('7')"
-            >7-letter words</a
-          >
-          <a
-            href="#"
-            class="btn btn-primary letter-choice"
-            onclick="generateWords(''); levelUpdate('random')"
-            >Random no of letters</a
-          >
+        <section>
+            <div class="container-fluid d-flex justify-content-center" id="letter-buttons">
+                <a href="#" class="btn btn-primary letter-choice"
+                    onclick="generateWords('4'); levelUpdate('4')">4-letter words</a>
+                <a href="#" class="btn btn-primary letter-choice"
+                    onclick="generateWords('5'); levelUpdate('5')">5-letter words</a>
+                <a href="#" class="btn btn-primary letter-choice"
+                    onclick="generateWords('6'); levelUpdate('6')">6-letter words</a>
+                <a href="#" class="btn btn-primary letter-choice"
+                    onclick="generateWords('7'); levelUpdate('7')">7-letter words</a>
+                <a href="#" class="btn btn-primary letter-choice"
+                    onclick="generateWords(''); levelUpdate('random')">Random no of letters</a>
+            </div>
+        </section>
+        <div id="noscript">
+            <noscript>Sorry, you are unable to play this game as your browser does not
+                support JavaScript!</noscript>
         </div>
-      </section>
-      <div id="noscript">
-        <noscript
-          >Sorry, you are unable to play this game as your browser does not
-          support JavaScript!</noscript
-        >
-      </div>
-      <!-- Basic instructions - visible only when game is not being played -->
-      <div class="tagline">
-        Improve your typing skills while creating a minature zoo with this fun
-        game!
-      </div>
-      <div id="basic-instructions">
-        <p>
-          <i class="fa-solid fa-up-long"></i
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the difficulty above
-        </p>
-        <p>
-          <i class="fa-solid fa-down-long"></i
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type in the box below
-        </p>
-        <p>
-          <i class="fa-solid fa-keyboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;Copy the
-          words that appear here
-        </p>
-        <p>
-          <i class="fa-solid fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple!
-          Or is it...?
-        </p>
-      </div>
-      <!-- Visible countdown of 60 seconds for the duration of each game -->
-      <div class="container-fluid">
+        <!-- Basic instructions - visible only when game is not being played -->
+        <div class="tagline">
+            Improve your typing skills while creating a minature zoo with this fun
+            game!
+        </div>
+        <div id="basic-instructions">
+            <p>
+                <i class="fa-solid fa-up-long"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the difficulty above
+            </p>
+            <p>
+                <i class="fa-solid fa-down-long"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type in the box below
+            </p>
+            <p>
+                <i class="fa-solid fa-keyboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;Copy the
+                words that appear here
+            </p>
+            <p>
+                <i class="fa-solid fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple!
+                Or is it...?
+            </p>
+        </div>
+        <!-- Visible countdown of 60 seconds for the duration of each game -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3" id="timer-box">
+                    <h2>Countdown</h2>
+                    <div id="counter"></div>
+                </div>
+                <!-- Word that is randomly generated by API will appear here for user to attempt to type -->
+                <div class="col-6" id="words">
+                    <div id="error"></div>
+                </div>
+                <!-- Score for current game shown here -->
+                <div class="col-3" id="score-box">
+                    <h2>Score</h2>
+                    <div id="current-score">0</div>
+                </div>
+            </div>
+            <!-- Input field for user to attempt to type the word that is generated. Clicking here triggers game/countdown start -->
+            <div id="input">
+                <input type="text" id="userInput" name="userInput" placeholder="type here"
+                    onkeyup="checkLetter(event); iteratePress(event);" /><br />
+            </div>
+        </div>
+        <!-- Modal for incorrect letter typed -->
+        <div class="modal" data-bs-backdrop="static" id="game-over">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Game over!</h4>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="game-end-modal">
+                        <p>
+                            Sorry, you typed the last word incorrectly and so this game is
+                            over and your zoo is closed.
+                        </p>
+                        <p>Don't forget that accuracy is more important than speed!</p>
+                        <p>Select a level to try again!</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button id="game-end-modal-button" type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            onclick="resetGame()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for game complete typed -->
+        <div class="modal" data-bs-backdrop="static" id="game-complete">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Congratulations!</h4>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="game-end-modal">
+                        <p>
+                            You completed 60 seconds and didn't type any words incorrectly!
+                        </p>
+                        <p>You scored <span id="current-game-score"></span>!</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button id="game-won-modal-button" type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            onclick="resetGame()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zoo area that will accumulate an animal for every word the user gets correct -->
+        <div id="zoo">Your zoo: <span id="zooAnimals"></span></div>
+        <!-- High scores will show here -->
         <div class="row">
-          <div class="col-3" id="timer-box">
-            <h2>Countdown</h2>
-            <div id="counter"></div>
-          </div>
-          <!-- Word that is randomly generated by API will appear here for user to attempt to type -->
-          <div class="col-6" id="words">
-            <div id="error"></div>
-          </div>
-          <!-- Score for current game shown here -->
-          <div class="col-3" id="score-box">
-            <h2>Score</h2>
-            <div id="current-score">0</div>
-          </div>
-        </div>
-        <!-- Input field for user to attempt to type the word that is generated. Clicking here triggers game/countdown start -->
-        <div id="input">
-          <input
-            type="text"
-            id="userInput"
-            name="userInput"
-            placeholder="type here"
-            onkeyup="checkLetter(event); iteratePress(event);"
-          /><br />
-        </div>
-      </div>
-      <!-- Modal for incorrect letter typed -->
-      <div class="modal" data-bs-backdrop="static" id="game-over">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Game over!</h4>
-            </div>
-
-            <!-- Modal body -->
-            <div class="game-end-modal">
-              <p>
-                Sorry, you typed the last word incorrectly and so this game is
-                over and your zoo is closed.
-              </p>
-              <p>Don't forget that accuracy is more important than speed!</p>
-              <p>Select a level to try again!</p>
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button
-                id="game-end-modal-button"
-                type="button"
-                class="btn btn-danger"
-                data-bs-dismiss="modal"
-                onclick="resetGame()"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal for game complete typed -->
-      <div class="modal" data-bs-backdrop="static" id="game-complete">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Congratulations!</h4>
-            </div>
-
-            <!-- Modal body -->
-            <div class="game-end-modal">
-              <p>
-                You completed 60 seconds and didn't type any words incorrectly!
-              </p>
-              <p>You scored <span id="current-game-score"></span>!</p>
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button
-                id="game-won-modal-button"
-                type="button"
-                class="btn btn-danger"
-                data-bs-dismiss="modal"
-                onclick="resetGame()"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Zoo area that will accumulate an animal for every word the user gets correct -->
-      <div id="zoo">Your zoo: <span id="zooAnimals"></span></div>
-      <!-- High scores will show here -->
-      <div class="row">
-        <div class="col-6">
-          <div class="text-center">
-            <a
-              href="#"
-              class="btn btn-xl btn-outline-dark scores-instruct"
-              data-bs-toggle="modal"
-              data-bs-target="#high-scores"
-              >High Scores</a
-            >
-          </div>
-
-          <div class="modal" id="high-scores">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">High Scores</h4>
+            <div class="col-6">
+                <div class="text-center">
+                    <a href="#" class="btn btn-xl btn-outline-dark scores-instruct" data-bs-toggle="modal"
+                        data-bs-target="#high-scores">High Scores</a>
                 </div>
 
-                <!-- Modal body -->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-2 score-title">4-letters</div>
-                    <div class="col-2 score-title">5-letters</div>
-                    <div class="col-2 score-title">6-letters</div>
-                    <div class="col-2 score-title">7-letters</div>
-                    <div class="col-2 score-title">Random</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-2 score" id="4-letter">0</div>
-                    <div class="col-2 score" id="5-letter">0</div>
-                    <div class="col-2 score" id="6-letter">0</div>
-                    <div class="col-2 score" id="7-letter">0</div>
-                    <div class="col-2 score" id="random-letter">0</div>
-                  </div>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Link for detailed instructions and pop-up message containing them -->
-        <div class="col-6">
-          <div class="text-center">
-            <a
-            href="#"  
-            class="btn btn-xl btn-outline-dark scores-instruct"
-              data-bs-toggle="modal"
-              data-bs-target="#d-instruct"
-              >Detailed instructions</a
-            >
-          </div>
-          <!-- Modal for detailed instructions -->
-          <div class="modal" id="d-instruct">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Detailed instructions</h4>
-                </div>
+                <div class="modal" id="high-scores">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">High Scores</h4>
+                            </div>
 
-                <!-- Modal body -->
-                <ul class="modal-body">
-                  <li>
-                    Select the number of letters you would like in the words you
-                    are shown.
-                  </li>
-                  <li>
-                    When you click in the box, the timer will start. You have a
-                    minute to type as many words as possible.
-                  </li>
-                  <li>If you get a word wrong, your turn ends.</li>
-                  <li>
-                    Click the selector for the number of letters to start a new
-                    game.
-                  </li>
-                  <li>
-                    The more words you get correct, the more animals you gain in
-                    your zoo!
-                  </li>
-                  <li>
-                    If you get all your words correct, you win! Keep trying to
-                    beat your high score!
-                  </li>
-                </ul>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                            <!-- Modal body -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-2 score-title">4-letters</div>
+                                    <div class="col-2 score-title">5-letters</div>
+                                    <div class="col-2 score-title">6-letters</div>
+                                    <div class="col-2 score-title">7-letters</div>
+                                    <div class="col-2 score-title">Random</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-2 score" id="4-letter">0</div>
+                                    <div class="col-2 score" id="5-letter">0</div>
+                                    <div class="col-2 score" id="6-letter">0</div>
+                                    <div class="col-2 score" id="7-letter">0</div>
+                                    <div class="col-2 score" id="random-letter">0</div>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <!-- Link for detailed instructions and pop-up message containing them -->
+            <div class="col-6">
+                <div class="text-center">
+                    <a href="#" class="btn btn-xl btn-outline-dark scores-instruct" data-bs-toggle="modal"
+                        data-bs-target="#d-instruct">Detailed instructions</a>
+                </div>
+                <!-- Modal for detailed instructions -->
+                <div class="modal" id="d-instruct">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Detailed instructions</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <ul class="modal-body">
+                                <li>
+                                    Select the number of letters you would like in the words you
+                                    are shown.
+                                </li>
+                                <li>
+                                    When you click in the box, the timer will start. You have a
+                                    minute to type as many words as possible.
+                                </li>
+                                <li>If you get a word wrong, your turn ends.</li>
+                                <li>
+                                    Click the selector for the number of letters to start a new
+                                    game.
+                                </li>
+                                <li>
+                                    The more words you get correct, the more animals you gain in
+                                    your zoo!
+                                </li>
+                                <li>
+                                    If you get all your words correct, you win! Keep trying to
+                                    beat your high score!
+                                </li>
+                            </ul>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Footer including link to contact page and links to social media -->
     <footer>
-      <div>
-        <p>
-          Got some suggestions as to how we could improve? We'd love to hear
-          from you! Follow us on our socials or
-          <a href="contact.html" id="message-link" class="hyperlink"
-            >send us a message!</a
-          >
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a target="_blank" href="https://www.facebook.com">
-            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a target="_blank" href="https://www.instagram.com">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </p>
-      </div>
+        <div>
+            <p>
+                Got some suggestions as to how we could improve? We'd love to hear
+                from you! Follow us on our socials or
+                <a href="contact.html" id="message-link" class="hyperlink">send us a message!</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+            </p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

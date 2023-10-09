@@ -32,6 +32,7 @@ function gameOnOff() {
     $('#score-box').toggle();
     $('.letter-choice').toggle();
     $('#high-score-d-instruct').toggle();
+    $('.tagline').toggle();
 }
 
 //generates the random word to copy
@@ -247,10 +248,7 @@ if (document.getElementById('form') !== null) {
                 emailbtn.value = 'Send Email';
                 alert(JSON.stringify(err));
             });
-        // Get the modal element
         var modal = document.getElementById('email-sent');
-
-        // Open the modal
         modal.style.display = "block";
     });
 };

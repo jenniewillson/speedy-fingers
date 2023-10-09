@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The simple but effective way to improve your typing!" />
     <meta name="keywords" content="typing practice keyboard speed accuracy game fun" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
@@ -23,12 +22,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
         defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
     <script type="text/javascript" src="assets/js/main.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    
+
 </head>
 
 <body>
@@ -36,63 +36,63 @@
     <header class="header">
         <!-- SPEEDY FINGERS Logo for top of page -->
         <a href="index.html">
-        <h1>
-            <img class="logo" src="assets/images/logo.png" alt="Speedy fingers" aria-label="Speedy fingers logo" />
-        </h1>
+            <h1>
+                <img class="logo" src="assets/images/logo.png" alt="Speedy fingers" aria-label="Speedy fingers logo" />
+            </h1>
         </a>
     </header>
 
     <!-- CONTACT FORM -->
     <div id="contact-form">
         <br>
-    <form id="form">
-        <div class="field">
-            <input type="text" name="name" id="name" placeholder="name" required><br>
-        </div>
-        <br>
-        <div class="field"> 
-            <input type="email" name="email" id="email" placeholder="email"><br>
-        </div>
-        <br>
-        <div class="field"> 
-            <textarea rows="10" name="message" id="message" placeholder="Message" required></textarea>
-        </div>
-        <div class="field"> 
-            <input type="submit" id="button" value="Send feedback">
-        </div>
-    </form>
+        <form id="form">
+            <div class="field">
+                <input type="text" name="name" id="name" placeholder="name" required><br>
+            </div>
+            <br>
+            <div class="field">
+                <input type="email" name="email" id="email" placeholder="email"><br>
+            </div>
+            <br>
+            <div class="field">
+                <textarea rows="10" name="message" id="message" placeholder="Message" required></textarea>
+            </div>
+            <div class="field">
+                <input type="submit" id="button" value="Send feedback">
+            </div>
+        </form>
     </div>
-    <div class="modal" id="email-sent">
+    <div class="modal" data-bs-backdrop="static" id="email-sent">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-    
+
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Thank you!</h4>
                 </div>
-    
+
                 <!-- Modal body -->
                 <p class="modal-body">You message has been sent! Thank you very much for contacting us!</p>
-    
+
                 <!-- Modal footer -->
                 <div class="modal-footer">
                     <button id="email-sent-ack" type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
                 </div>
-    
+
             </div>
         </div>
     </div>
 
-<footer>
+    <footer>
 
-</footer>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init('BWAtaeeEHccPVSvli');
-    })();
-</script>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('BWAtaeeEHccPVSvli');
+        })();
+    </script>
 </body>
 
 </html>
