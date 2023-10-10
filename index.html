@@ -104,7 +104,7 @@
             </div>
             <!-- Input field for user to attempt to type the word that is generated. Clicking here triggers game/countdown start -->
             <div id="input">
-                <input type="text" id="userInput" name="userInput" placeholder="type here"
+                <input type="text" id="userInput" name="userInput"
                     onkeyup="checkLetter(event); iteratePress(event);" /><br />
             </div>
         </div>
@@ -123,6 +123,7 @@
                             Sorry, you typed the last word incorrectly and so this game is
                             over and your zoo is closed.
                         </p>
+                        <p>You scored <span id="losing-game-score"></span>!</p>
                         <p>Don't forget that accuracy is more important than speed!</p>
                         <p>Select a level to try again!</p>
                     </div>

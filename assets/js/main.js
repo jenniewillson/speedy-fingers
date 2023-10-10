@@ -109,6 +109,8 @@ function checkLetter(event) {
             wordsArray = "";
             let gameOverModal = new bootstrap.Modal(document.getElementById('game-over'));
             gameOverModal.toggle();
+            returnScore();
+            highScore();
             document.getElementById('game-end-modal-button').focus();
         }
     }
@@ -146,8 +148,11 @@ function scoreUpdate() {
 
 //adds score to congratulations modal
 
+
 function returnScore() {
-    document.getElementById("current-game-score").innerHTML = document.getElementById("current-score").innerHTML;
+    let currentScore = document.getElementById("current-score").innerHTML;
+    document.getElementById("current-game-score").innerHTML = currentScore;
+    document.getElementById("losing-game-score").innerHTML = currentScore;
 }
 
 //Checks and updates high score
