@@ -220,8 +220,8 @@ a {
 }
 
 .modal-content {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .modal-header h4 {
