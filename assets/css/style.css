@@ -7,9 +7,9 @@
 body {
     font-family: 'Roboto',
         sans-serif;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     font-weight: 600;
-    width: 100vw;
+    max-width: 99%;
     background-color: rgb(247, 209, 38, 0.3);
 }
 
@@ -64,7 +64,7 @@ a {
     margin-top: 2rem;
     border-radius: 20px;
     max-width: fit-content;
-    padding: 4px;
+    padding: 10px;
     display: block;
 }
 
@@ -80,8 +80,9 @@ a {
     font-weight: 600;
 }
 
-.letter-choice :hover {
+.letter-choice:hover {
     background-color: #f7d126;
+    border: #ffffff solid 2px;
 }
 
 #letter-buttons {
@@ -245,6 +246,11 @@ a {
     border-radius: 20px;
     background-color: #49c195;
     font-weight: 600;
+}
+
+.scores-instruct:hover {
+    background-color: #f7d126;
+    border: #ffffff solid 2px;
 }
 
 /*GAME END MODALS*/
