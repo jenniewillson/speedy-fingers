@@ -133,6 +133,7 @@ function resetGame() {
     score = 1;
     shutdownZoo();
     gameOnOff();
+    document.getElementById('first-button').focus();
 }
 
 //checks the level to identify which level high score the score should be checked against
