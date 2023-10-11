@@ -87,13 +87,17 @@ a {
 
 .std-button:hover,
 .std-button:focus,
-.std-button:focus-visible,
-.std-button:active {
+.std-button:focus-visible {
     background-color: #f7d126;
     outline: #f7d126 solid 2px;
     border: #ffffff solid 2px;
     box-shadow: none;
     color: #ffffff;
+}
+
+:not(.btn-check)+.btn:active {
+    background-color: rgb(247, 209, 38, 0.3);
+    border: #f7d126 solid 2px;
 }
 
 #letter-buttons {
