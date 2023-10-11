@@ -66,7 +66,6 @@ function generateWords(noLetters) {
         document.getElementById("words").innerHTML = wordsArray[0];
         document.getElementById("current-score").innerHTML = 0;
         document.getElementById('userInput').focus();
-        console.log(wordsArray);
     });
     resetTime();
 }
@@ -87,9 +86,6 @@ function iteratePress() {
         addAnimal();
         scoreUpdate();
     }
-    console.log(letterCount);
-    console.log(countPress);
-    console.log(wordsArray);
 }
 
 function checkLetter(event) {
@@ -135,7 +131,6 @@ let currentLevel = 0;
 
 function levelUpdate(level) {
     currentLevel = level;
-    console.log(currentLevel);
 }
 
 //updates the score
@@ -188,8 +183,6 @@ function highScore() {
     localStorage.setItem('6-letter-local', document.getElementById('6-letter').innerHTML);
     localStorage.setItem('7-letter-local', document.getElementById('7-letter').innerHTML);
     localStorage.setItem('random-letter-local', document.getElementById('random-letter').innerHTML);
-    console.log(currentLevel);
-    console.log(document.getElementById("current-score").innerHTML);
 }
 
 //provides the countdown and resets the timer
