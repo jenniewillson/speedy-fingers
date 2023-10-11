@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+// adds the high scores from local storage when user returns to the game
 
 $(function () {
     if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
@@ -35,7 +35,7 @@ function gameOnOff() {
     $('.tagline').toggle();
 }
 
-//generates the random word to copy
+//contacts the API and returns error if needed
 
 const baseURL = "https://random-word-api.vercel.app/api?words=200";
 
@@ -58,11 +58,15 @@ function getData(noLetters, cb) {
 
 }
 
+// Filters the returned words to unique values only
+
 let wordsArray = [];
 
 function onlyUnique(value, index, array) {
     return array.indexOf(value) === index;
 }
+
+//Generates the words and adds to element, resets current score and time and moves focus to user input
 
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
@@ -70,12 +74,11 @@ function generateWords(noLetters) {
         document.getElementById("words").innerHTML = wordsArray[0];
         document.getElementById("current-score").innerHTML = 0;
         document.getElementById('userInput').focus();
-        console.log(wordsArray);
     });
     resetTime();
 }
 
-//checks if the word is typed correctly
+//identifies which letter of the word is being typed, removes complete words and adds animals to zoo and point to score for each correct word
 
 let countPress = 0;
 
@@ -92,6 +95,8 @@ function iteratePress() {
         scoreUpdate();
     }
 }
+
+//checks if each letter is typed correctly and ends game if not, including updating the score and clearing the words array
 
 function checkLetter(event) {
     let sourceLetter = document.getElementById("words").innerHTML.charAt(countPress);
@@ -146,7 +151,7 @@ function scoreUpdate() {
     document.getElementById("current-score").innerHTML = score++;
 }
 
-//adds score to congratulations modal
+//adds score to congratulations or game over modal
 
 
 function returnScore() {
@@ -155,7 +160,7 @@ function returnScore() {
     document.getElementById("losing-game-score").innerHTML = currentScore;
 }
 
-//Checks and updates high score
+//Checks and updates high score where required, including local storage
 
 function highScore() {
     if (currentLevel == '4') {
@@ -216,7 +221,7 @@ function resetTime() {
     timer = setInterval(startTime, 1000);
 }
 
-//adds an animal to the zoo
+//adds a random animal to the zoo
 
 let Animals = new Array('<i class="fa-solid fa-hippo"></i>', '<i class="fa-solid fa-otter"></i>', '<i class="fa-solid fa-dragon"></i>', '<i class="fa-solid fa-kiwi-bird"></i>', '<i class="fa-solid fa-crow"></i>', '<i class="fa-solid fa-spider"></i>', '<i class="fa-solid fa-fish-fins"></i>', '<i class="fa-solid fa-frog"></i>', '<i class="fa-solid fa-bugs"></i>', '<i class="fa-solid fa-worm"></i>', '<i class="fa-solid fa-locust"></i>');
 let zoo = [];
@@ -227,10 +232,14 @@ function addAnimal() {
     document.getElementById('zooAnimals').innerHTML = zoo.join(" ");
 }
 
+//clears the zoo when game is over
+
 function shutdownZoo() {
     zoo = [];
     document.getElementById('zooAnimals').innerHTML = "";
 }
+
+//sends message added by user to emailjs or returns error
 
 const emailbtn = document.getElementById('button');
 
@@ -256,6 +265,7 @@ if (document.getElementById('form') !== null) {
     });
 };
 
+//Returns user to home page once message has been sent
 
 if (document.getElementById('email-sent-ack') !== null) {
     document.getElementById('email-sent-ack').addEventListener('click', function () {
