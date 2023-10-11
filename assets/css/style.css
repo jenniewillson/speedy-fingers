@@ -82,9 +82,15 @@ a {
     font-weight: 600;
 }
 
-.std-button:hover {
+.std-button:hover,
+.std-button:focus,
+.std-button:focus-visible,
+.std-button:active {
     background-color: #f7d126;
+    outline: #f7d126 solid 2px;
     border: #ffffff solid 2px;
+    box-shadow: none;
+    color: #ffffff;
 }
 
 #letter-buttons {
@@ -244,15 +250,8 @@ a {
     height: 6rem;
     font-size: x-large;
     line-height: 80px;
-    border: #0d070c solid 4px;
     border-radius: 20px;
-    background-color: #49c195;
     font-weight: 600;
-}
-
-.scores-instruct:hover {
-    background-color: #f7d126;
-    border: #ffffff solid 2px;
 }
 
 /*GAME END MODALS*/
