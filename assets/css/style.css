@@ -85,14 +85,20 @@ a {
     font-weight: 600;
 }
 
-.std-button:hover,
-.std-button:focus,
-.std-button:focus-visible {
+.std-button:hover {
     background-color: #f7d126;
     outline: #f7d126 solid 2px;
     border: #ffffff solid 2px;
     box-shadow: none;
     color: #ffffff;
+}
+
+.std-button:focus,
+.std-button:focus-visible {
+    background-color: #49c195;
+    border: none;
+    outline: #f7d126 solid 5px;
+    color: #0d070c;
 }
 
 :not(.btn-check)+.btn:active {
