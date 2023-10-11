@@ -60,12 +60,17 @@ function getData(noLetters, cb) {
 
 let wordsArray = [];
 
+function onlyUnique(value, index, array) {
+    return array.indexOf(value) === index;
+}
+
 function generateWords(noLetters) {
     getData(noLetters, function (data) {
-        wordsArray = data;
+        wordsArray = data.filter(onlyUnique);
         document.getElementById("words").innerHTML = wordsArray[0];
         document.getElementById("current-score").innerHTML = 0;
         document.getElementById('userInput').focus();
+        console.log(wordsArray);
     });
     resetTime();
 }
