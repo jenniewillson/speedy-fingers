@@ -18,6 +18,8 @@ a {
     color: inherit;
 }
 
+/*JAVASCRIPT NOT ACTIVE*/
+
 #noscript {
     font-size: 50px;
     color: #ee1b29;
@@ -71,7 +73,7 @@ a {
     display: block;
 }
 
-/*OPTIONS*/
+/*LETTER OPTIONS*/
 
 .std-button {
     margin-right: 10px;
@@ -138,7 +140,7 @@ a {
     font-size: 200%;
 }
 
-/*WORDS*/
+/*GIVEN WORDS*/
 
 #words {
     color: #0d070c;
@@ -191,6 +193,19 @@ a {
     font-size: 500%;
 }
 
+/*ZOO*/
+
+#zoo {
+    display: flex;
+    background-color: #ee1b29;
+    color: #ffffff;
+    font-size: 300%;
+    margin: 2%;
+    border: 5px solid #0d070c;
+    padding: 2rem;
+    display: none;
+}
+
 /*HIGH SCORES*/
 
 .score-title {
@@ -205,20 +220,7 @@ a {
     font-size: 150%;
 }
 
-/*ZOO*/
-
-#zoo {
-    display: flex;
-    background-color: #ee1b29;
-    color: #ffffff;
-    font-size: 300%;
-    margin: 2%;
-    border: 5px solid #0d070c;
-    padding: 2rem;
-    display: none;
-}
-
-/*DETAILED INSTRUCTIONS*/
+/*DETAILED INSTRUCTIONS AND HIGH SCORES MODALS*/
 
 .modal-xl {
     max-width: 90%;
