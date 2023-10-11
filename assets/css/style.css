@@ -315,6 +315,10 @@ footer i:hover {
     font-size: 20px;
 }
 
+:focus-visible, :focus {
+    outline: solid 2px #49c195;
+}
+
 #message,
 #name,
 #email {
@@ -322,6 +326,7 @@ footer i:hover {
     border: #f7d126 solid 2px;
     border-radius: 10px;
     padding: 7px;
+    font-size: 20px;
 }
 
 .fixed-text {
