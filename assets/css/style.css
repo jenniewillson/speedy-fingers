@@ -36,6 +36,7 @@ a {
     max-width: 70vw;
     max-height: 20vh;
     background-color: #f7d126;
+    border: #0d070c solid 4px;
     border-radius: 20px;
     padding: 0 40px;
 }
