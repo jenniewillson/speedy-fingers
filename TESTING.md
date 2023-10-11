@@ -52,37 +52,17 @@ Tested on iPad
 |Requirement - *Home page*|Result|Comments|
 |-------|-------|-------|
 |Website loads|Pass|No delay|
-|Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
-|Scroll works where appropriate|Pass|N/A|
-|Logo Home link works|Pass|Re-loads Home screen|
-|All menu links take user to correct screen|Pass|Note: returned to Home screen between each selection|
-|Active menu item is correct|Pass|N/A|
-|Theme picture links take user to correct theme pages|Pass|Note: returned to Home screen between each selection|
-|Footer - 'Contact us' takes user to Contact us page/form|Pass|N/A|
-|Footer - Telephone link works|Pass|Brought up 'Call' option on phone with number|
-|Footer - Email link works|Pass|Opened default mail app|
-|Footer - Facebook, Twitter and Instagram links work|Pass|Opened separate web page or relevant app|
+
 
 |Requirement - *Contact page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
-|Scroll works where appropriate|Pass|Able to scroll to see Gallery images|
-|Logo Home link works|Pass|N/A|
-|All menu links take user to correct screen|Pass|N/A|
-|Active menu item is correct|Pass|N/A|
-|Meetings are correct theme and all information visible|Pass|N/A|
-|Map link takes user to Station Inn location on new tab|Pass|Link opened in default Maps app and took me straight to the location|
-|Sign up section takes user to Contact us page/form|Pass|N/A|
-|Footer - 'Contact us' takes user to Contact us page/form|Pass|N/A|
-|Footer - Telephone link works|Pass|Brought up 'Call' options on iPad|
-|Footer - Email link works|Pass|Opened default mail app|
-|Footer - Facebook, Twitter and Instagram links work|Pass|Opened separate web page or relevant app|
+
 
 |Requirement - *404 page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
-|Logo Home link works|Pass|N/A|
-|Clicking on text container returns user to Home|Pass|N/A|
+
 
 ### Desktop
 |Requirement - *Home page*|Result|Comments|
@@ -96,8 +76,7 @@ Tested on iPad
 |Requirement - *404 page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
-|Logo Home link works|Pass|N/A|
-|Clicking on text container returns user to Home|Pass|N/A|
+
 
 ### Simulation of other devices
 
@@ -120,40 +99,30 @@ The most [commonly used Browsers in the UK](https://www.statista.com/statistics/
 ### User stories
 |Story ID|Result|Comments|
 |-------|-------|-------|
-|US1|Pass|Future development to have a longer term calendar of events available, to be able to filter them on topic and to be able to have them in a database that dynamically updates|
-|US2|Pass|Future development to be able to sign up for events with a number limit and ability to pay online|
-|US3|Pass|In future consider adding a Q&A style page that users can post in and give answers and get email updates|
-|US4|Pass|See above|
-|US5|Pass|See above|
-|US6|Pass|See above|
-|US7|Pass|Future development to make at least one checkbox mandatory and to have a member page where you can update your mailing preferences|
-|US8|De-scoped|This will require coding beyond the developer's current ability. However, at present this can be done via email, with the website administrator updating photos in the gallery manually. As the gallery is responsive to number and size of photos and screen, it will be a straightforward task to do this periodically|
-|US9|Pass|N/A|
-|US10|Pass|In future this would be connected to an endpoint and a database of details and preferences|
-|US11|Pass?|Pass will be determined by whether I pass this milestone project!|
-|US12|Pass|Yes, I have learnt a lot about how to code for screen readers, keyboard navigation, colour contrast etc.|
+|US1|Pass?|TBC|
+|US2|?|xx|
+|US3|?|xx|
+|US4|?|xx|
+|US5|?|xx|
+|US6|?|xx|
+|US7|?|xx|
+|US8|?|xx|
+|US9|?|xx|
+|US10|?|xx|
+|US11|?|xx|
+|US12|?|xx|
 
 ## Defect Tracking
 
-- [Images not appearing](https://github.com/jenniewillson/trainiacs/issues/2#issue-1718216540)
-- [Images disappeared after updated ](https://github.com/jenniewillson/trainiacs/issues/3#issue-1718308757)
-- [Link not working for images on home page ](https://github.com/jenniewillson/trainiacs/issues/5#issue-1718324678)
-- [HTML Validator errors](https://github.com/jenniewillson/trainiacs/issues/6#issue-1718326880)
-- [Header background colour missing on some pages](https://github.com/jenniewillson/trainiacs/issues/8#issue-1718476485)
-- [Nav-bar menu items left aligned](https://github.com/jenniewillson/trainiacs/issues/10)
-- [Navbar border not reaching edges of page](https://github.com/jenniewillson/trainiacs/issues/11)
-- [Hamburger menu links not always having an effect](https://github.com/jenniewillson/trainiacs/issues/15)
-- [Layout issues at <240px wide](https://github.com/jenniewillson/trainiacs/issues/16)
+- TO BE ADDED
 
 ## Defects of Note
 
 #### Of note due to length of time taken to resolve
-- [Meeting items too far to the right](https://github.com/jenniewillson/trainiacs/issues/14)
-- [Hamburger menu disappearing and wrapping](https://github.com/jenniewillson/trainiacs/issues/13)
+- TO BE ADDED
 
 #### Of note due to key learning points
-- [Unmanageable css](https://github.com/jenniewillson/trainiacs/issues/4#issue-1718310163)
-- [Social media links get 404 error](https://github.com/jenniewillson/trainiacs/issues/7#issue-1718469587)
+- TO BE ADDED
 
 ## Outstanding Defects
 - None identified
