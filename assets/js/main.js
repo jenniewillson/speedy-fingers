@@ -3,19 +3,19 @@
 $(function () {
     if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
         document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
-    };
+    }
     if (localStorage.getItem('5-letter-local') !== null && localStorage.getItem('5-letter-local') !== undefined) {
         document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
-    };
+    }
     if (localStorage.getItem('6-letter-local') !== null && localStorage.getItem('6-letter-local') !== undefined) {
         document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
-    };
+    }
     if (localStorage.getItem('7-letter-local') !== null && localStorage.getItem('7-letter-local') !== undefined) {
         document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
-    };
+    }
     if (localStorage.getItem('random-letter-local') !== null && localStorage.getItem('random-letter-local') !== undefined) {
         document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
-    };
+    }
 });
 
 // hides and shows sections depending on whether game is in progress
@@ -264,7 +264,7 @@ if (document.getElementById('form') !== null) {
         var modal = document.getElementById('email-sent');
         modal.style.display = "block";
     });
-};
+}
 
 //Returns user to home page once message has been sent
 
@@ -272,4 +272,4 @@ if (document.getElementById('email-sent-ack') !== null) {
     document.getElementById('email-sent-ack').addEventListener('click', function () {
         window.location.href = 'index.html';
     });
-};
+}
