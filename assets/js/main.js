@@ -224,7 +224,7 @@ function resetTime() {
 
 //adds a random animal to the zoo
 
-let Animals = new Array('<i class='fa-solid fa-hippo'></i>', '<i class='fa-solid fa-otter'></i>', '<i class='fa-solid fa-dragon'></i>', '<i class='fa-solid fa-kiwi-bird'></i>', '<i class='fa-solid fa-crow'></i>', '<i class='fa-solid fa-spider'></i>', '<i class='fa-solid fa-fish-fins'></i>', '<i class='fa-solid fa-frog'></i>', '<i class='fa-solid fa-bugs'></i>', '<i class='fa-solid fa-worm'></i>', '<i class='fa-solid fa-locust'></i>');
+let Animals = new Array('<i class="fa-solid fa-hippo"></i>', '<i class="fa-solid fa-otter"></i>', '<i class="fa-solid fa-dragon"></i>', '<i class="fa-solid fa-kiwi-bird"></i>', '<i class="fa-solid fa-crow"></i>', '<i class="fa-solid fa-spider"></i>', '<i class="fa-solid fa-fish-fins"></i>', '<i class="fa-solid fa-frog"></i>', '<i class="fa-solid fa-bugs"></i>', '<i class="fa-solid fa-worm"></i>', '<i class="fa-solid fa-locust"></i>');
 let zoo = [];
 
 function addAnimal() {
