@@ -1,20 +1,24 @@
 // adds the high scores from local storage when user returns to the game
 
 $(function () {
-    if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
-        document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
-    }
-    if (localStorage.getItem('5-letter-local') !== null && localStorage.getItem('5-letter-local') !== undefined) {
-        document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
-    }
-    if (localStorage.getItem('6-letter-local') !== null && localStorage.getItem('6-letter-local') !== undefined) {
-        document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
-    }
-    if (localStorage.getItem('7-letter-local') !== null && localStorage.getItem('7-letter-local') !== undefined) {
-        document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
-    }
-    if (localStorage.getItem('random-letter-local') !== null && localStorage.getItem('random-letter-local') !== undefined) {
-        document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
+    try {
+        if (localStorage.getItem('4-letter-local') !== null && localStorage.getItem('4-letter-local') !== undefined) {
+            document.getElementById('4-letter').innerHTML = localStorage.getItem('4-letter-local');
+        }
+        if (localStorage.getItem('5-letter-local') !== null && localStorage.getItem('5-letter-local') !== undefined) {
+            document.getElementById('5-letter').innerHTML = localStorage.getItem('5-letter-local');
+        }
+        if (localStorage.getItem('6-letter-local') !== null && localStorage.getItem('6-letter-local') !== undefined) {
+            document.getElementById('6-letter').innerHTML = localStorage.getItem('6-letter-local');
+        }
+        if (localStorage.getItem('7-letter-local') !== null && localStorage.getItem('7-letter-local') !== undefined) {
+            document.getElementById('7-letter').innerHTML = localStorage.getItem('7-letter-local');
+        }
+        if (localStorage.getItem('random-letter-local') !== null && localStorage.getItem('random-letter-local') !== undefined) {
+            document.getElementById('random-letter').innerHTML = localStorage.getItem('random-letter-local');
+        }
+    } catch (e) {
+        //do nothing, as this js file is shared with 404 and contact pages, which do not need local storage pre-loaded
     }
 });
 
