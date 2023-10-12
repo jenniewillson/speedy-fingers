@@ -9,10 +9,21 @@
 
 ## Validation Testing
 
+### Javascript Validation
+
+I used JSFiddle for this and include screenshots. Any issues would show as red dots in the left margin but there are none shown.
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/0f6edd99-b0c8-4b5a-ae94-a4ec81ab37b4)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/0ebb7ee6-5ef8-41d2-a09f-c6f7d1a75d59)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/23c2e073-1675-4e5e-9143-525c8c7c33d4)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/9ad47263-d6cd-4082-afc5-562ed6b11c2b)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/63878a85-b93c-4567-843d-872fa8e11aa2)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/629ed3ff-504a-437b-b218-91330800d524)
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/a4a284da-54aa-4e2b-8230-48be462831f5)
+
 ### CSS Validation
 
 ![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/b0d3d58c-21ab-4241-9df9-eeb739159ce8)
-
 
 ### HTML Validation
 
