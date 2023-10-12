@@ -47,14 +47,25 @@ Tested on iPhone 13
 |Requirement - *Home page*|Result|Comments|
 |-------|-------|-------|
 |Website loads|Pass|No delay|
+|Mobile message is shown to inform user this cannot be used on a mobile|Pass|N/A|
+|Send us a message link takes user to Contact page|Pass|N/A|
+|Facebook link takes user to Facebook app|Pass|N/A|
+|Instagram link takes user to Instagram app|Pass|N/A|
 
 |Requirement - *Contact page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Input fields work correctly, validate and accept data|Pass|N/A|
+|Send email button works|Pass|Triggers modal|
+|Message sent confirmation modal appears and is displayed correctly|Pass|N/A|
+|Message sent modal close button returns user to Home Page|Pass|N/A|
+|Message sent is received by email set up|Pass|N/A|
 
 |Requirement - *404 page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Link in 404 message returns user to Home Page|Pass|N/A|
+|Logo links back to Home Page|Pass|N/A|
 
 ### Tablet
 
@@ -63,30 +74,99 @@ Tested on iPad
 |Requirement - *Home page*|Result|Comments|
 |-------|-------|-------|
 |Website loads|Pass|No delay|
+|Basic instructions can be read - font size and layout|Pass|Tested portrait and landscape|
+|Detailed instructions button works|Pass|Tested portrait and landscape|
+|Detailed instructions show, font size and layout fit|Pass|Tested portrait and landscape|
+|High scores button works|Pass|Tested portrait and landscape|
+|High scores show, font size and layout fit|Pass|Tested portrait and landscape|
+|Letter select buttons start game|Pass|Tested portrait and landscape|
+|Letter select buttons trigger correct number of letters in word given|Pass|Tested portrait and landscape. Noted portrait that longer words do not fit in box available. See bugs section.|
+|Letter select buttons start timer|Pass|Tested portrait and landscape|
+|Letter select buttons show current score|Pass|Tested portrait and landscape|
+|User is able to type words|Fail|ipad defaults to capital letter which is not matched|
+|User is able to type words (retest)|Pass|Case is now ignored|
+|Letter check works correctly|Pass|Tested portrait and landscape|
+|New word is generated when last one complete|Pass|Tested portrait and landscape|
+|Score increases with each correct word|Pass|Tested portrait and landscape|
+|Timer starts at 60 and counts down correctly|Pass|Tested portrait and landscape|
+|Game is ended when incorrect letter is typed|Pass|Tested portrait and landscape|
+|Score is given correctly|Pass|Tested portrait and landscape|
+|Game over modal appears|Pass|Tested portrait and landscape|
+|Game over modal can only be closed using button and resets game|Pass|Tested portrait and landscape|
+|Game is ended when 60 seconds has elapsed|Pass|Tested portrait and landscape|
+|Game complete modal appears|Pass|Tested portrait and landscape|
+|Score is given correctly|Pass|Tested portrait and landscape|
+|Game complete modal can only be closed using button and resets game|Pass|Tested portrait and landscape|
+|High scores are updated correctly for all levels|Pass|Tested portrait and landscape|
+|High scores are saved locally and can be seen when re-visiting the page|Pass|Tested portrait and landscape|
+|Send us a message link takes user to Contact page|Pass|N/A|
+|Facebook link takes user to Facebook app|Pass|N/A|
+|Instagram link takes user to Instagram app|Pass|N/A|
 
 
 |Requirement - *Contact page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Input fields work correctly, validate and accept data|Pass|N/A|
+|Send email button works|Pass|Triggers modal|
+|Message sent confirmation modal appears and is displayed correctly|Pass|N/A|
+|Message sent modal close button returns user to Home Page|Pass|N/A|
+|Message sent is received by email set up|Pass|N/A|
 
 
 |Requirement - *404 page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Link in 404 message returns user to Home Page|Pass|N/A|
+|Logo links back to Home Page|Pass|N/A|
 
 
 ### Desktop
 |Requirement - *Home page*|Result|Comments|
 |-------|-------|-------|
 |Website loads|Pass|No delay|
+|Basic instructions can be read - font size and layout|Pass|N/A|
+|Detailed instructions button works|Pass|N/A|
+|Detailed instructions show, font size and layout fit|Pass|N/A|
+|High scores button works|Pass|N/A|
+|High scores show, font size and layout fit|Pass|N/A|
+|Letter select buttons start game|Pass|N/A|
+|Letter select buttons trigger correct number of letters in word given|Pass|N/A|
+|Letter select buttons start timer|Pass|N/A|
+|Letter select buttons show current score|Pass|N/A|
+|User is able to type words (retest)|Pass|N/A|
+|Letter check works correctly|Pass|N/A|
+|New word is generated when last one complete|Pass|N/A|
+|Score increases with each correct word|Pass|N/A|
+|Timer starts at 60 and counts down correctly|Pass|N/A|
+|Game is ended when incorrect letter is typed|Pass|N/A|
+|Score is given correctly|Pass|N/A|
+|Game over modal appears|Pass|N/A|
+|Game over modal can only be closed using button and resets game|Pass|N/A|
+|Game is ended when 60 seconds has elapsed|Pass|N/A|
+|Game complete modal appears|Pass|N/A|
+|Score is given correctly|Pass|N/A|
+|Game complete modal can only be closed using button and resets game|Pass|N/A|
+|High scores are updated correctly for all levels|Pass|N/A|
+|High scores are saved locally and can be seen when re-visiting the page|Pass|N/A|
+|Send us a message link takes user to Contact page|Pass|N/A|
+|Facebook link takes user to Facebook app|Pass|N/A|
+|Instagram link takes user to Instagram app|Pass|N/A|
 
 |Requirement - *Contact page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Input fields work correctly, validate and accept data|Pass|N/A|
+|Send email button works|Pass|Triggers modal|
+|Message sent confirmation modal appears and is displayed correctly|Pass|N/A|
+|Message sent modal close button returns user to Home Page|Pass|N/A|
+|Message sent is received by email set up|Pass|N/A|
 
 |Requirement - *404 page*|Result|Comments|
 |-------|-------|-------|
 |Layout appearance is correct (check for visibility of text, layout, no overlaps)|Pass|N/A|
+|Link in 404 message returns user to Home Page|Pass|N/A|
+|Logo links back to Home Page|Pass|N/A|
 
 
 ### Simulation of other devices
@@ -151,7 +231,7 @@ This was a good learning point about onKeyUp against onKeyDown and I would have 
 This was picked up by my mentor, I hadn't realised this would happen. It made a big difference to whether the functionality of the website worked. I will both be aware in future of the ability to close these modals in alternate ways but also important considerations around where exactly a function, such as reset game in this case, is triggered from. This also applied to the bug with sending messsage.
 
 ## Outstanding Defects
-- None identified
+- [Given words box not large enough on portrait on tablet](https://github.com/jenniewillson/speedy-fingers/issues/11)
 
 ## Accessibility Testing
 
