@@ -105,7 +105,7 @@ function checkLetter(event) {
         e.preventDefault();
     }
     else {
-        if (inputLetter === sourceLetter) {
+        if (inputLetter.localeCompare(sourceLetter, undefined, { sensitivity: 'base' }) === 0) {
             document.getElementById('userInput').style.color = '#49c195';
         }
         else {
