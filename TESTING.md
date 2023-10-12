@@ -125,15 +125,32 @@ The most [commonly used Browsers in the UK](https://www.statista.com/statistics/
 
 ## Defect Tracking
 
-- TO BE ADDED
+- [countPress not resetting to 0](https://github.com/jenniewillson/speedy-fingers/issues/2)
+- [Score not resetting](https://github.com/jenniewillson/speedy-fingers/issues/5)
+- [Timer functionality not working](https://github.com/jenniewillson/speedy-fingers/issues/6)
+- [Getting the last letter wrong acts as if it was correct](https://github.com/jenniewillson/speedy-fingers/issues/7)
+- [Game continues to reset if you keep typing after game over](https://github.com/jenniewillson/speedy-fingers/issues/8)
+- [Email sent modal triggered when mandatory fields not completed](https://github.com/jenniewillson/speedy-fingers/issues/10)
 
 ## Defects of Note
 
 #### Of note due to length of time taken to resolve
-- TO BE ADDED
+- [Timer does not stop after a game](https://github.com/jenniewillson/speedy-fingers/issues/4)
+
+This took a significant time to work through and various trial and error. Then was partially fixed and not fully and took a long time to work out why that was happening.
 
 #### Of note due to key learning points
-- TO BE ADDED
+- [Duplicated ids](https://github.com/jenniewillson/speedy-fingers/issues/1)
+
+This is an easy mistake to make but one I need to avoid in the future. It is also something I will need to check for going forward.
+
+- [Fast typing triggers as incorrect spelling](https://github.com/jenniewillson/speedy-fingers/issues/3)
+
+This was a good learning point about onKeyUp against onKeyDown and I would have a much better idea of what to use when in future development.
+
+- [Modal can be closed by clicking background](https://github.com/jenniewillson/speedy-fingers/issues/9)
+
+This was picked up by my mentor, I hadn't realised this would happen. It made a big difference to whether the functionality of the website worked. I will both be aware in future of the ability to close these modals in alternate ways but also important considerations around where exactly a function, such as reset game in this case, is triggered from. This also applied to the bug with sending messsage.
 
 ## Outstanding Defects
 - None identified
