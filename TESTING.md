@@ -110,18 +110,16 @@ The most [commonly used Browsers in the UK](https://www.statista.com/statistics/
 ### User stories
 |Story ID|Result|Comments|
 |-------|-------|-------|
-|US1|Pass?|TBC|
-|US2|?|xx|
-|US3|?|xx|
-|US4|?|xx|
-|US5|?|xx|
-|US6|?|xx|
-|US7|?|xx|
-|US8|?|xx|
-|US9|?|xx|
-|US10|?|xx|
-|US11|?|xx|
-|US12|?|xx|
+|US1|Pass|Achieves this function, users are able to practice typing and it encourages improvement|
+|US2|Pass|Achieves this function, encouraging user to keep improving. Is clearly aimed at full keyboard use |
+|US3|Pass|Accessible to many people and will help users to see how many words they can type per minute|
+|US4|Pass|Fun practice that can be done in or out of work environment and improves user's typing by encouraging them to beat their high score|
+|US5|Pass|Ability to retain high score locally is important for this|
+|US6|Pass|Fun and easy to learn and access for students|
+|US7|Pass?|The game has remained simple but it remains to be seen how popular it will be. It has had very positive feedback from testers, who report wanting to play it over and over|
+|US8|TBC|For future measures, may require some future development to be completed to achieve this, such as posting to social media|
+|US9|Pass|This was the best way to learn for me, the lessons gave me the structure but I really learnt by doing the project. I feel much more confident in the use of Javascript now and excited about what I could achieve with it!|
+|US10|Pass|I was keen to use an API in this project and this has really helped me to understand some basics about how they work and give me a good grounding in future use of more complex APIs|
 
 ## Defect Tracking
 
