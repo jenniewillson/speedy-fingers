@@ -327,7 +327,8 @@ footer i:hover {
     font-size: 20px;
 }
 
-:focus-visible, :focus {
+:focus-visible,
+:focus {
     outline: solid 2px #49c195;
 }
 
@@ -356,4 +357,12 @@ footer i:hover {
     padding: 10px;
     margin: 5%;
     line-height: 30px;
+}
+
+/*Media queries - reduces font size for tablet screen portrait and narrower screens to ensure words fit in box*/
+
+@media screen and (max-width: 1300px) {
+    #words {
+        font-size: 400%;
+    }
 }

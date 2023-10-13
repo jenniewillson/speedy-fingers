@@ -32,7 +32,7 @@ $(function () {
  * Listener to trigger the gameOnOff function:
  * 
  * Triggers when user clicks on any of the buttons with class 'letter-choice'
- */ 
+ */
 $('.letter-choice').click(gameOnOff);
 
 /**
@@ -96,7 +96,7 @@ function getData(noLetters, cb) {
  *  Function onlyUnique:
  * 
  * Takes the words in the array provided by API and removes any duplicates
- */ 
+ */
 
 let wordsArray = [];
 
