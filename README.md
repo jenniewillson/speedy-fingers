@@ -274,12 +274,16 @@ Commits are carried out regularly throughout the project and detailed through co
 
 ### Header
 
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/eae24c00-ef06-4f53-be65-8226d0c8687a)
+
 - Fun and eye catching
 - Represents the ethos of the game
 - Bright and simple to see what the intention is
 - Uses keyboard key shapes and 'zoom' lines to illustrate the name
 
 ### Footer
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/d9b0d5a1-460b-4010-b2de-4c617c052036)
 
 - Simple links to socials and contact us
 - Minimal text
@@ -289,14 +293,20 @@ Commits are carried out regularly throughout the project and detailed through co
 
 #### Tagline
 
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/879da048-05f5-4447-b494-fc158c729eae)
+
 - User can quickly and easily see the intention of the game/site
 
 #### Basic instructions
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/f5dc5d64-1f12-4a49-a3a1-83846f562c90)
 
 - Simple instructions that can be read and followed quickly
 - Icons to make it simpler to follow
 
 #### Letter/Level selector buttons
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/74bb6efd-4d25-4eb6-bc24-deccfb9aa0a4)
 
 - Located in standard place for navigation
 - Simple and obvious
@@ -304,9 +314,13 @@ Commits are carried out regularly throughout the project and detailed through co
 
 #### High Scores and Detailed Instructions
 
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/48c465ca-135c-498b-9bc2-929330d5a7d6)
+
 - Easy identification and access buttons to avoid having too much text on screen
 
 ### Game
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/b286feae-6e89-4a1d-8f6f-2c51b7d81883)
 
 - Easy to start
 - Immediately takes the focus to the input to allow for easy start
@@ -314,6 +328,8 @@ Commits are carried out regularly throughout the project and detailed through co
 - Easy to re-start, takes user back to game selection buttons
 
 ### High scores
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/55b9a359-15bd-473d-8b80-0b07d0abebe5)
 
 - Allow user to compete against themselves
 - Show improvement
@@ -326,9 +342,19 @@ Commits are carried out regularly throughout the project and detailed through co
 
 ### Modals
 
-- Easily show information in a way that is accessible and easly dismissed
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/86bf783f-aec5-4181-a270-861e459058d6)
+
+- Easily show information in a way that is accessible and easly dismissed#
+- Modals for:
+  - Game over
+  - Game end
+  - High scores
+  - Detailed instructions
+  - Message sent (contact page)
 
 ### Contact page
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/a7ea4ace-d043-44f1-ad17-847c8aa8d1e7)
 
 - Simple form for basic feedback
 - Validation on mandatory fields
@@ -339,11 +365,14 @@ Commits are carried out regularly throughout the project and detailed through co
 
 ### Custom 404 page
 
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/37b1f67e-65bd-4758-bec0-57c32fb91d76)
+
 - Appears more professional as it is styled to the theme
-- Fun message, matched with the theme
 - Easy navigation back to Home Page
 
 ### Favicon
+
+![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/7c27375a-b47b-46c0-a5c4-ecedaab5853c)
 
 - Site can be easily identified from tabs
 - Looks more professional
@@ -412,29 +441,17 @@ Control how many messages a user can send from a single IP and stop messages fro
 
 1. Using CodeAnywhere, go to 'Terminal' in the menu and select 'New Terminal'.
 
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/eb7b9c85-ecaa-4ee7-9554-e95cf83e3ef8)
-
 2. Once the terminal is loaded, type 'Python3 -m http.server' and press enter
 
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/291bdda4-ea08-4f9a-a024-312727c33e4b)
-
 3. There will be a pop-up in the bottom right hand corner - select to open in browser - or if you don't see the pop-up, go to 'Ports' at the bottom right of the screen, click on it and select the Port 8000 browser button.
-
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/237bcfcd-75ab-4c80-9106-a0208532025e)
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/11ad0570-c9d0-4ab8-9291-2e8fa4fbf3df)
-
-
 
 ## Deploy to GitHub Pages
 
 1. In your repository click on settings, then on pages in the left hand menu:
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/3a6e8933-09f3-4b58-af40-9f8705d5ae58)
 
 2. In branches, select 'main' and click save:
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/acdcdf97-fdd3-4efa-9dbe-356c62662b1f)
 
-3. You should have a section that shows the site is deployed - if not after a few minutes, refresh the page:
-![image](https://github.com/jenniewillson/trainiacs/assets/127458925/10edd513-ef87-42e9-850a-c3c7080af9a5)
+3. You should have a section that shows the site is deployed - if not after a few minutes, refresh the page.
 
 # Credits
 
