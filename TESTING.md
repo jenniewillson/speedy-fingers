@@ -48,7 +48,7 @@
 
 ### Javascript Validation
 
-I used JSFiddle for this and include screenshots. Any issues would show as red dots in the left margin but there are none shown.
+I used JSFiddle for this as I had a mixture of jquery 3.2.1 and vanilla javascript, so other validators did not work. When I had errors, they showed as red dots in the left margin. These were fixed and none remain, as shown in screenshots:
 
 ![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/0f6edd99-b0c8-4b5a-ae94-a4ec81ab37b4)
 ![image](https://github.com/jenniewillson/speedy-fingers/assets/127458925/0ebb7ee6-5ef8-41d2-a09f-c6f7d1a75d59)
@@ -246,6 +246,7 @@ The most [commonly used Browsers in the UK](https://www.statista.com/statistics/
 - [Getting the last letter wrong acts as if it was correct](https://github.com/jenniewillson/speedy-fingers/issues/7)
 - [Game continues to reset if you keep typing after game over](https://github.com/jenniewillson/speedy-fingers/issues/8)
 - [Email sent modal triggered when mandatory fields not completed](https://github.com/jenniewillson/speedy-fingers/issues/10)
+- [Given words box not large enough on portrait on tablet](https://github.com/jenniewillson/speedy-fingers/issues/11)
 
 ## Defects of Note
 
@@ -268,7 +269,8 @@ This was a good learning point about onKeyUp against onKeyDown and I would have 
 This was picked up by my mentor, I hadn't realised this would happen. It made a big difference to whether the functionality of the website worked. I will both be aware in future of the ability to close these modals in alternate ways but also important considerations around where exactly a function, such as reset game in this case, is triggered from. This also applied to the bug with sending messsage.
 
 ## Outstanding Defects
-- [Given words box not large enough on portrait on tablet](https://github.com/jenniewillson/speedy-fingers/issues/11)
+
+- None identified
 
 ## Accessibility Testing
 
